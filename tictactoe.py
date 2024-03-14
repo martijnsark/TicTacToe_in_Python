@@ -29,7 +29,7 @@ class TicTacToe():
         self.background_color = (25, 174, 66)
         self.table_color = (50, 50, 50)
         self.line_color = (190, 0, 10)
-        self.instructions_color = (17, 53, 165)
+        self.instructions_color = (0, 0, 255)
         self.game_over_bg_color = (47, 98, 162)
         self.game_over_color = (255, 179, 1)
         self.font = pygame.font.SysFont("Courier New", 30)
