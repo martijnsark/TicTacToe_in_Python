@@ -26,7 +26,7 @@ class TicTacToe():
             for row in range(6):
                 self.table[col].append("-")
 
-        self.background_color = (255, 174, 66)
+        self.background_color = (25, 174, 66)
         self.table_color = (50, 50, 50)
         self.line_color = (190, 0, 10)
         self.instructions_color = (17, 53, 165)
