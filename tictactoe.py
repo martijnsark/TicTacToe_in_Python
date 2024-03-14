@@ -1,3 +1,4 @@
+import play
 import pygame
 from pygame.locals import *
 
@@ -140,3 +141,6 @@ class TicTacToe():
 if __name__ == "__main__":
     g = TicTacToe(window_size[0])
     g.main()
+
+
+    play.start_program()
