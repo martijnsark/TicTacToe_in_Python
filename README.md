@@ -6,6 +6,8 @@ In this project i used this website as my starting point: https://thepythoncode.
 
 I ended up using their icon assets and, i used their script at the bottom of the website as my baseline to base my game off.
 
+I also used a icon from icons8 so to credit them here's there link: icons8.com
+
 <br><br>
 
 ## the goal:
