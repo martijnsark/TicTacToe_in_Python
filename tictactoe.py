@@ -62,22 +62,29 @@ class TicTacToe():
 
     def _move(self, pos):
         try:
-            x, y = (pos[0] - self.grid_offset_x) // self.cell_size, (pos[1] - self.grid_offset_y) // self.cell_size
-            if self.table[x][y] == "-":
-                self.table[x][y] = self.player
-                self._draw_char(x, y, self.player)
-                self._game_check()
-                self._change_player()
+            # Calculate the grid indices where the user clicked
+            grid_x = (pos[0] - self.grid_offset_x) // self.cell_size
+            grid_y = (pos[1] - self.grid_offset_y) // self.cell_size
+            
+            # Ensure the click is within the grid boundaries
+            if 0 <= grid_x < 6 and 0 <= grid_y < 6:
+                # Ensure the cell is empty before placing X or O
+                if self.table[grid_x][grid_y] == "-":
+                    self.table[grid_x][grid_y] = self.player
+                    self._draw_char(grid_x, grid_y, self.player)
+                    self._game_check()
+                    self._change_player()
         except IndexError:
             print("Click inside the table only")
 
     def _draw_char(self, x, y, player):
-        if self.player == "O":
+        if player == "O":
             img = pygame.image.load("images/Tc-O.png")
-        elif self.player == "X":
+        elif player == "X":
             img = pygame.image.load("images/Tc-X.png")
-        img = pygame.transform.scale(img, (self.cell_size, self.cell_size))
-        screen.blit(img, (self.grid_offset_x + x * self.cell_size, self.grid_offset_y + y * self.cell_size))
+        img = pygame.transform.scale(img, (self.cell_size - self.table_space, self.cell_size - self.table_space))
+        screen.blit(img, (self.grid_offset_x + x * self.cell_size + self.table_space // 2, 
+                          self.grid_offset_y + y * self.cell_size + self.table_space // 2))
 
     def _message(self):
         message = ""
