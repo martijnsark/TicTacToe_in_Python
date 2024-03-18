@@ -43,6 +43,11 @@ class TicTacToe():
         self.font = pygame.font.SysFont("Courier New", 50)  # Text height set to 50 pixels
         self.FPS = pygame.time.Clock()
 
+        # Load restart button image
+        self.restart_button_img = pygame.image.load("images/RestartGame.png")
+        self.restart_button_rect = self.restart_button_img.get_rect()
+        self.restart_button_rect.topright = (window_size[0] - 10, 10)
+
     def _draw_table(self):
         tb_space_point = (self.table_space, self.table_size - self.table_space)
         cell_space_point = (self.cell_size, self.cell_size * 2)
@@ -90,6 +95,9 @@ class TicTacToe():
         msg = self.font.render(message, True, self.instructions_color)
         screen.blit(msg, ((window_size[0] - msg.get_width()) // 2, window_size[1] - 50))  # Adjusted y-coordinate
 
+        # Draw restart button
+        screen.blit(self.restart_button_img, self.restart_button_rect)
+
     def _game_check(self):
         # Vertical, Horizontal, and Diagonal checks
         for i in range(6):
@@ -132,6 +140,16 @@ class TicTacToe():
         end_x, end_y = self.grid_offset_x + end_point[0] * self.cell_size + mid_val, self.grid_offset_y + end_point[1] * self.cell_size + mid_val
         pygame.draw.line(screen, self.line_color, (start_x, start_y), (end_x, end_y), self.cell_size // 8)
 
+    def restart_game(self):
+        self.player = "X"
+        self.winner = None
+        self.taking_move = True
+        self.table = [["-" for _ in range(6)] for _ in range(6)]
+        # Clear the screen
+        screen.fill(self.background_color)
+        # Redraw the table
+        self._draw_table()
+
     def main(self):
         screen.fill(self.background_color)
         self._draw_table()
@@ -143,6 +161,8 @@ class TicTacToe():
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     if self.taking_move:
                         self._move(event.pos)
+                    elif self.restart_button_rect.collidepoint(event.pos):
+                        self.restart_game()
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:  # Exit on pressing Escape key
                         self.running = False
@@ -150,6 +170,7 @@ class TicTacToe():
                     window_size = event.size
                     self.grid_offset_x = (window_size[0] - self.table_size) // 2
                     self.grid_offset_y = (window_size[1] - self.table_size) // 4  # Adjusted for positioning
+                    self.restart_button_rect.topright = (window_size[0] - 10, 10)
             pygame.display.flip()
             self.FPS.tick(60)
 
