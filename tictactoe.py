@@ -1,10 +1,16 @@
 import pygame
-from pygame.locals import *
+import os
 
+os.environ['SDL_VIDEO_CENTERED'] = '1'  # Centers the window
 pygame.init()
 pygame.font.init()
 
-window_size = (600, 650)
+# Get the screen resolution
+screen_info = pygame.display.Info()
+screen_width, screen_height = screen_info.current_w, screen_info.current_h
+
+# Set the window size to match the screen resolution
+window_size = (screen_width, screen_height)
 
 screen = pygame.display.set_mode(window_size)
 pygame.display.set_caption("Tic Tac Toe")
@@ -12,9 +18,11 @@ pygame.display.set_caption("Tic Tac Toe")
 
 class TicTacToe():
     def __init__(self, table_size):
-        self.table_size = table_size
-        self.cell_size = table_size // 6
-        self.table_space = 20
+        self.table_size = min(window_size) - 100  # Adjusted for screen size
+        self.cell_size = self.table_size // 6
+        self.table_space = self.cell_size // 3  # Adjusted for screen size
+        self.grid_offset_x = (window_size[0] - self.table_size) // 2
+        self.grid_offset_y = (window_size[1] - self.table_size) // 4  # Adjusted for positioning
 
         self.player = "X"
         self.winner = None
@@ -32,24 +40,24 @@ class TicTacToe():
         self.instructions_color = (0, 0, 255)
         self.game_over_bg_color = (47, 98, 162)
         self.game_over_color = (255, 179, 1)
-        self.font = pygame.font.SysFont("Courier New", 30)
+        self.font = pygame.font.SysFont("Courier New", 50)  # Text height set to 50 pixels
         self.FPS = pygame.time.Clock()
 
     def _draw_table(self):
         tb_space_point = (self.table_space, self.table_size - self.table_space)
         cell_space_point = (self.cell_size, self.cell_size * 2)
         for i in range(1, 6):
-            pygame.draw.line(screen, self.table_color, (self.cell_size * i, self.table_space),
-                             (self.cell_size * i, self.table_size - self.table_space), 8)
-            pygame.draw.line(screen, self.table_color, (self.table_space, self.cell_size * i),
-                             (self.table_size - self.table_space, self.cell_size * i), 8)
+            pygame.draw.line(screen, self.table_color, (self.grid_offset_x + self.cell_size * i, self.grid_offset_y + self.table_space),
+                             (self.grid_offset_x + self.cell_size * i, self.grid_offset_y + self.table_size - self.table_space), self.cell_size // 8)  # Adjusted for screen size
+            pygame.draw.line(screen, self.table_color, (self.grid_offset_x + self.table_space, self.grid_offset_y + self.cell_size * i),
+                             (self.grid_offset_x + self.table_size - self.table_space, self.grid_offset_y + self.cell_size * i), self.cell_size // 8)  # Adjusted for screen size
 
     def _change_player(self):
         self.player = "O" if self.player == "X" else "X"
 
     def _move(self, pos):
         try:
-            x, y = pos[0] // self.cell_size, pos[1] // self.cell_size
+            x, y = (pos[0] - self.grid_offset_x) // self.cell_size, (pos[1] - self.grid_offset_y) // self.cell_size
             if self.table[x][y] == "-":
                 self.table[x][y] = self.player
                 self._draw_char(x, y, self.player)
@@ -64,21 +72,23 @@ class TicTacToe():
         elif self.player == "X":
             img = pygame.image.load("images/Tc-X.png")
         img = pygame.transform.scale(img, (self.cell_size, self.cell_size))
-        screen.blit(img, (x * self.cell_size, y * self.cell_size, self.cell_size, self.cell_size))
+        screen.blit(img, (self.grid_offset_x + x * self.cell_size, self.grid_offset_y + y * self.cell_size))
 
     def _message(self):
+        message = ""
         if self.winner is not None:
-            screen.fill(self.game_over_bg_color, (220, 605, 160, 30))
-            msg = self.font.render(f'{self.winner} WINS!!', True, self.game_over_color)
-            screen.blit(msg, (230, 605))
+            message = f'{self.winner} WINS!!'
         elif not self.taking_move:
-            screen.fill(self.game_over_bg_color, (220, 605, 160, 30))
-            instructions = self.font.render('DRAW!!', True, self.game_over_color)
-            screen.blit(instructions, (270, 605))
+            message = 'DRAW!!'
         else:
-            screen.fill(self.background_color, (220, 605, 160, 30))
-            instructions = self.font.render(f'{self.player} to move', True, self.instructions_color)
-            screen.blit(instructions, (220, 605))
+            message = f'{self.player} to move'
+
+        # Clear previous message
+        screen.fill(self.background_color, (0, window_size[1] - 50, window_size[0], 50))
+
+        # Render and display the current message at the bottom of the screen
+        msg = self.font.render(message, True, self.instructions_color)
+        screen.blit(msg, ((window_size[0] - msg.get_width()) // 2, window_size[1] - 50))  # Adjusted y-coordinate
 
     def _game_check(self):
         # Vertical, Horizontal, and Diagonal checks
@@ -118,9 +128,9 @@ class TicTacToe():
 
     def _pattern_strike(self, start_point, end_point):
         mid_val = self.cell_size // 2
-        start_x, start_y = start_point[0] * self.cell_size + mid_val, start_point[1] * self.cell_size + mid_val
-        end_x, end_y = end_point[0] * self.cell_size + mid_val, end_point[1] * self.cell_size + mid_val
-        pygame.draw.line(screen, self.line_color, (start_x, start_y), (end_x, end_y), 8)
+        start_x, start_y = self.grid_offset_x + start_point[0] * self.cell_size + mid_val, self.grid_offset_y + start_point[1] * self.cell_size + mid_val
+        end_x, end_y = self.grid_offset_x + end_point[0] * self.cell_size + mid_val, self.grid_offset_y + end_point[1] * self.cell_size + mid_val
+        pygame.draw.line(screen, self.line_color, (start_x, start_y), (end_x, end_y), self.cell_size // 8)
 
     def main(self):
         screen.fill(self.background_color)
@@ -133,6 +143,13 @@ class TicTacToe():
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     if self.taking_move:
                         self._move(event.pos)
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_ESCAPE:  # Exit on pressing Escape key
+                        self.running = False
+                if event.type == pygame.VIDEORESIZE:
+                    window_size = event.size
+                    self.grid_offset_x = (window_size[0] - self.table_size) // 2
+                    self.grid_offset_y = (window_size[1] - self.table_size) // 4  # Adjusted for positioning
             pygame.display.flip()
             self.FPS.tick(60)
 
@@ -140,6 +157,3 @@ class TicTacToe():
 if __name__ == "__main__":
     g = TicTacToe(window_size[0])
     g.main()
-
-
-    
