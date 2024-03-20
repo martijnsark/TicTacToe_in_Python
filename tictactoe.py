@@ -17,17 +17,114 @@ pygame.display.set_caption("Tic Tac Toe")
 
 class StartScreen:
     def __init__(self):
-        self.font = pygame.font.SysFont("Courier New", 30)  # Text height set to 50 pixels
+        self.headline_font = pygame.font.SysFont("Courier New", 40)  # Headline font size set to 40 pixels
+        self.font = pygame.font.SysFont("Courier New", 25)  # Text font size set to 30 pixels
         self.button_img = pygame.image.load("images/exit.png")
         self.button_rect = self.button_img.get_rect()
         self.button_rect.topright = (window_size[0] - 10, 10)
 
     def show(self):
         screen.fill((192, 192, 192))  # Black background
-        # Draw text in the center
-        text = self.font.render("Welcome to Tic Tac Toe!", True, (0, 0, 0)) 
-        text_rect = text.get_rect(center=(window_size[0] // 2, window_size[1] // 2))
-        screen.blit(text, text_rect)
+        
+        # Draw headline (paragraph 1)
+        headline_text = self.headline_font.render("Dit is een versie van Tic Tac Toe zonder machine learning.", True, (0, 0, 0))
+        headline_rect = headline_text.get_rect(center=(window_size[0] // 2, 50))  # Adjusted y-coordinate
+        screen.blit(headline_text, headline_rect)
+        
+        # Add empty space between paragraphs
+        pygame.draw.rect(screen, (192, 192, 192), (0, 180, window_size[0], 20))
+        
+        # Draw second additional text (paragraph 2)
+        paragraph2_text = self.font.render("De regels van het spel.", True, (0, 0, 0))
+        paragraph2_rect = paragraph2_text.get_rect(center=(window_size[0] // 2, 140))  # Adjusted y-coordinate
+        paragraph2_rect.centerx = window_size[0] // 2  # Center horizontally
+        screen.blit(paragraph2_text, paragraph2_rect)
+        
+        # Draw second additional text (paragraph 2)
+        paragraph2_text = self.font.render("De winner is de eerste met drie op een rij horizontaal, verticaal en diagonaal.", True, (0, 0, 0))
+        paragraph2_rect = paragraph2_text.get_rect(center=(window_size[0] // 2, 180))  # Adjusted y-coordinate
+        paragraph2_rect.centerx = window_size[0] // 2  # Center horizontally
+        screen.blit(paragraph2_text, paragraph2_rect)
+        
+        # Draw third additional text (paragraph 3)
+        paragraph3_text = self.font.render("Je kan veder alleen x's en o's binnen het speelveld zetten.", True, (0, 0, 0))
+        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 210))  # Adjusted y-coordinate
+        paragraph3_rect.centerx = window_size[0] // 2  # Center horizontally
+        screen.blit(paragraph3_text, paragraph3_rect)
+        
+        
+        
+        # Draw third additional text (paragraph 3)
+        paragraph3_text = self.font.render("Hoe je speelt.", True, (0, 0, 0))
+        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 290))  # Adjusted y-coordinate
+        paragraph3_rect.centerx = window_size[0] // 2  # Center horizontally
+        screen.blit(paragraph3_text, paragraph3_rect)
+        
+        # Draw third additional text (paragraph 3)
+        paragraph3_text = self.font.render("Normaal speel je tegen een AI.", True, (0, 0, 0))
+        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 330))  # Adjusted y-coordinate
+        paragraph3_rect.centerx = window_size[0] // 2  # Center horizontally
+        screen.blit(paragraph3_text, paragraph3_rect)
+        
+        # Draw third additional text (paragraph 3)
+        paragraph3_text = self.font.render("Maar voor nu moet je met iemand anders samen spelen.", True, (0, 0, 0))
+        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 360))  # Adjusted y-coordinate
+        paragraph3_rect.centerx = window_size[0] // 2  # Center horizontally
+        screen.blit(paragraph3_text, paragraph3_rect)
+        
+        # Draw third additional text (paragraph 3)
+        paragraph3_text = self.font.render("Het idee is dus dat omstebeurt speelt.", True, (0, 0, 0))
+        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 390))  # Adjusted y-coordinate
+        paragraph3_rect.centerx = window_size[0] // 2  # Center horizontally
+        screen.blit(paragraph3_text, paragraph3_rect)
+        
+        # Draw third additional text (paragraph 3)
+        paragraph3_text = self.font.render("Je speelt beide op de zelfde computer waar altijd X begint voor O kies nu wie begint als welke.", True, (0, 0, 0))
+        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 420))  # Adjusted y-coordinate
+        paragraph3_rect.centerx = window_size[0] // 2  # Center horizontally
+        screen.blit(paragraph3_text, paragraph3_rect)
+        
+        
+        
+        
+        
+        
+        # Draw third additional text (paragraph 4)
+        paragraph4_text = self.font.render("De controles.", True, (0, 0, 0))
+        paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 500))  # Adjusted y-coordinate
+        paragraph4_rect.centerx = window_size[0] // 2  # Center horizontally
+        screen.blit(paragraph4_text, paragraph4_rect)
+        
+        # Draw third additional text (paragraph 4)
+        paragraph4_text = self.font.render("Je kan met linkermuis of muis scroll x's and o's plaatsen.", True, (0, 0, 0))
+        paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 540))  # Adjusted y-coordinate
+        paragraph4_rect.centerx = window_size[0] // 2  # Center horizontally
+        screen.blit(paragraph4_text, paragraph4_rect)
+        
+        # Draw third additional text (paragraph 4)
+        paragraph4_text = self.font.render("Wanneer het spel klaar is kan ESC klikken om te afsluiten.", True, (0, 0, 0))
+        paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 570))  # Adjusted y-coordinate
+        paragraph4_rect.centerx = window_size[0] // 2  # Center horizontally
+        screen.blit(paragraph4_text, paragraph4_rect) 
+        
+        # Draw third additional text (paragraph 4)
+        paragraph4_text = self.font.render("Je kan ook linker muis drukken op de swirl rechts boven na een spel om opnieuw te beginnen.", True, (0, 0, 0))
+        paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 600))  # Adjusted y-coordinate
+        paragraph4_rect.centerx = window_size[0] // 2  # Center horizontally
+        screen.blit(paragraph4_text, paragraph4_rect) 
+        
+        
+        
+        
+        
+        
+        
+         # Draw third additional text (paragraph 4)
+        paragraph4_text = self.font.render("Als je nu alles begrijpt kan je rechts boven op het kruisje drukken en beginnen.", True, (0, 0, 0))
+        paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 730))  # Adjusted y-coordinate
+        paragraph4_rect.centerx = window_size[0] // 2  # Center horizontally
+        screen.blit(paragraph4_text, paragraph4_rect) 
+        
         # Draw exit button
         screen.blit(self.button_img, self.button_rect)
         pygame.display.flip()
