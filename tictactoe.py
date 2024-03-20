@@ -15,8 +15,34 @@ window_size = (screen_width, screen_height)
 screen = pygame.display.set_mode(window_size)
 pygame.display.set_caption("Tic Tac Toe")
 
+class StartScreen:
+    def __init__(self):
+        self.font = pygame.font.SysFont("Courier New", 30)  # Text height set to 50 pixels
+        self.button_img = pygame.image.load("images/exit.png")
+        self.button_rect = self.button_img.get_rect()
+        self.button_rect.topright = (window_size[0] - 10, 10)
 
-class TicTacToe():
+    def show(self):
+        screen.fill((192, 192, 192))  # Black background
+        # Draw text in the center
+        text = self.font.render("Welcome to Tic Tac Toe!", True, (0, 0, 0)) 
+        text_rect = text.get_rect(center=(window_size[0] // 2, window_size[1] // 2))
+        screen.blit(text, text_rect)
+        # Draw exit button
+        screen.blit(self.button_img, self.button_rect)
+        pygame.display.flip()
+
+    def handle_events(self):
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                exit()
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if self.button_rect.collidepoint(event.pos):
+                    return True  # Transition to main game screen
+        return False
+
+class TicTacToe:
     def __init__(self, table_size):
         self.table_size = min(window_size) - 100  # Adjusted for screen size
         self.cell_size = self.table_size // 6
@@ -104,7 +130,7 @@ class TicTacToe():
 
         # Draw restart button
         screen.blit(self.restart_button_img, self.restart_button_rect)
-
+        
     def _game_check(self):
         # Vertical, Horizontal, and Diagonal checks
         for i in range(6):
@@ -183,5 +209,12 @@ class TicTacToe():
 
 
 if __name__ == "__main__":
+    start_screen = StartScreen()
+    while True:
+        if start_screen.handle_events():
+            break  # Exit the loop and start the game
+        start_screen.show()
+
     g = TicTacToe(window_size[0])
     g.main()
+
