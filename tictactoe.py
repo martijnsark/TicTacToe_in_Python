@@ -41,18 +41,16 @@ class StartScreen:
         screen.blit(paragraph2_text, paragraph2_rect)
         
         # Draw second additional text (paragraph 2)
-        paragraph2_text = self.font.render("De winner is de eerste met drie op een rij horizontaal, verticaal en diagonaal.", True, (0, 0, 0))
+        paragraph2_text = self.font.render("De winnaar is de eerste met vier op een rij horizontaal, verticaal en diagonaal.", True, (0, 0, 0))
         paragraph2_rect = paragraph2_text.get_rect(center=(window_size[0] // 2, 180))  # Adjusted y-coordinate
         paragraph2_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph2_text, paragraph2_rect)
         
         # Draw third additional text (paragraph 3)
-        paragraph3_text = self.font.render("Je kan veder alleen x's en o's binnen het speelveld zetten.", True, (0, 0, 0))
+        paragraph3_text = self.font.render("Je kan verder alleen x's en o's binnen het speelveld zetten.", True, (0, 0, 0))
         paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 210))  # Adjusted y-coordinate
         paragraph3_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph3_text, paragraph3_rect)
-        
-        
         
         # Draw third additional text (paragraph 3)
         paragraph3_text = self.font.render("Hoe je speelt.", True, (0, 0, 0))
@@ -84,11 +82,6 @@ class StartScreen:
         paragraph3_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph3_text, paragraph3_rect)
         
-        
-        
-        
-        
-        
         # Draw third additional text (paragraph 4)
         paragraph4_text = self.font.render("De controles.", True, (0, 0, 0))
         paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 500))  # Adjusted y-coordinate
@@ -103,7 +96,8 @@ class StartScreen:
         
         # Draw third additional text (paragraph 4)
         paragraph4_text = self.font.render("Wanneer het spel klaar is kan ESC klikken om te afsluiten.", True, (0, 0, 0))
-        paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 570))  # Adjusted y-coordinate
+        paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 570)) 
+        # Adjusted y-coordinate
         paragraph4_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph4_text, paragraph4_rect) 
         
@@ -113,13 +107,7 @@ class StartScreen:
         paragraph4_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph4_text, paragraph4_rect) 
         
-        
-        
-        
-        
-        
-        
-         # Draw third additional text (paragraph 4)
+        # Draw third additional text (paragraph 4)
         paragraph4_text = self.font.render("Als je nu alles begrijpt kan je rechts boven op het kruisje drukken en beginnen.", True, (0, 0, 0))
         paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 730))  # Adjusted y-coordinate
         paragraph4_rect.centerx = window_size[0] // 2  # Center horizontally
@@ -231,32 +219,33 @@ class TicTacToe:
     def _game_check(self):
         # Vertical, Horizontal, and Diagonal checks
         for i in range(6):
-            for j in range(4):
+            for j in range(3):  # Adjusted to check for 4 in a row
                 # Vertical check
-                if self.table[i][j] != "-" and self.table[i][j] == self.table[i][j + 1] == self.table[i][j + 2]:
-                    self._pattern_strike((i, j), (i, j + 2))
+                if self.table[i][j] != "-" and self.table[i][j] == self.table[i][j + 1] == self.table[i][j + 2] == self.table[i][j + 3]:
+                    self._pattern_strike((i, j), (i, j
+                                                  + 3))
                     self.winner = self.player
                     self.taking_move = False
                     return
                 # Horizontal check
-                if self.table[j][i] != "-" and self.table[j][i] == self.table[j + 1][i] == self.table[j + 2][i]:
-                    self._pattern_strike((j, i), (j + 2, i))
+                if self.table[j][i] != "-" and self.table[j][i] == self.table[j + 1][i] == self.table[j + 2][i] == self.table[j + 3][i]:
+                    self._pattern_strike((j, i), (j + 3, i))
                     self.winner = self.player
                     self.taking_move = False
                     return
         # Left diagonal check
-        for i in range(4):
-            for j in range(4):
-                if self.table[i][j] != "-" and self.table[i][j] == self.table[i + 1][j + 1] == self.table[i + 2][j + 2]:
-                    self._pattern_strike((i, j), (i + 2, j + 2))
+        for i in range(3):  # Adjusted to check for 4 in a row
+            for j in range(3):
+                if self.table[i][j] != "-" and self.table[i][j] == self.table[i + 1][j + 1] == self.table[i + 2][j + 2] == self.table[i + 3][j + 3]:
+                    self._pattern_strike((i, j), (i + 3, j + 3))
                     self.winner = self.player
                     self.taking_move = False
                     return
         # Right diagonal check
-        for i in range(4):
-            for j in range(2, 6):
-                if self.table[i][j] != "-" and self.table[i][j] == self.table[i + 1][j - 1] == self.table[i + 2][j - 2]:
-                    self._pattern_strike((i, j), (i + 2, j - 2))
+        for i in range(3):  # Adjusted to check for 4 in a row
+            for j in range(3, 6):
+                if self.table[i][j] != "-" and self.table[i][j] == self.table[i + 1][j - 1] == self.table[i + 2][j - 2] == self.table[i + 3][j - 3]:
+                    self._pattern_strike((i, j), (i + 3, j - 3))
                     self.winner = self.player
                     self.taking_move = False
                     return
@@ -314,4 +303,3 @@ if __name__ == "__main__":
 
     g = TicTacToe(window_size[0])
     g.main()
-
