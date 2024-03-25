@@ -200,11 +200,11 @@ class TicTacToe:
     def _message(self):
         message = ""
         if self.winner is not None:
-            message = f'{self.winner} WINS!!'
+            message = f'{self.winner} heeft gewonnen!!'
         elif not self.taking_move:
-            message = 'DRAW!!'
+            message = 'GELIJKSPEL!!'
         else:
-            message = f'{self.player} to move'
+            message = f'{self.player} kan nu iets plaatsen in de grid.'
 
         # Clear previous message
         screen.fill(self.background_color, (0, window_size[1] - 50, window_size[0], 50))
@@ -303,3 +303,4 @@ if __name__ == "__main__":
 
     g = TicTacToe(window_size[0])
     g.main()
+
