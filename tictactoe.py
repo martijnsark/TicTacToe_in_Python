@@ -160,13 +160,13 @@ class TicTacToe:
         self.restart_button_rect.topright = (window_size[0] - 10, 10)
 
     def _draw_table(self):
-        tb_space_point = (self.table_space, self.table_size - self.table_space)
-        cell_space_point = (self.cell_size, self.cell_size * 2)
-        for i in range(1, 6):
-            pygame.draw.line(screen, self.table_color, (self.grid_offset_x + self.cell_size * i, self.grid_offset_y + self.table_space),
-                             (self.grid_offset_x + self.cell_size * i, self.grid_offset_y + self.table_size - self.table_space), self.cell_size // 8)  # Adjusted for screen size
-            pygame.draw.line(screen, self.table_color, (self.grid_offset_x + self.table_space, self.grid_offset_y + self.cell_size * i),
-                             (self.grid_offset_x + self.table_size - self.table_space, self.grid_offset_y + self.cell_size * i), self.cell_size // 8)  # Adjusted for screen size
+     tb_space_point = (self.table_space, self.table_size - self.table_space)
+     cell_space_point = (self.cell_size, self.cell_size * 2)
+     for i in range(7):  # Changed range to 7 to include the last line
+        pygame.draw.line(screen, self.table_color, (self.grid_offset_x + self.cell_size * i, self.grid_offset_y),
+                         (self.grid_offset_x + self.cell_size * i, self.grid_offset_y + self.table_size), self.cell_size // 8)  # Vertical lines
+        pygame.draw.line(screen, self.table_color, (self.grid_offset_x, self.grid_offset_y + self.cell_size * i),
+                         (self.grid_offset_x + self.table_size, self.grid_offset_y + self.cell_size * i), self.cell_size // 8)  # Horizontal lines
 
     def _change_player(self):
         self.player = "O" if self.player == "X" else "X"
