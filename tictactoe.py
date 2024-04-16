@@ -1,10 +1,11 @@
-import pygame
-import os
-import random
+import pygame  # Importing pygame library for game development
+import os  # Importing os module for interacting with the operating system
+import random  # Importing random module for generating random numbers
 
-os.environ['SDL_VIDEO_CENTERED'] = '1'  # Centers the window
-pygame.init()
-pygame.font.init()
+# Centers the window
+os.environ['SDL_VIDEO_CENTERED'] = '1'  
+pygame.init()  # Initializing pygame
+pygame.font.init()  # Initializing font module
 
 # Get the screen resolution
 screen_info = pygame.display.Info()
@@ -13,8 +14,8 @@ screen_width, screen_height = screen_info.current_w, screen_info.current_h
 # Set the window size to match the screen resolution
 window_size = (screen_width, screen_height)
 
-screen = pygame.display.set_mode(window_size)
-pygame.display.set_caption("Tic Tac Toe")
+screen = pygame.display.set_mode(window_size)  # Setting display window
+pygame.display.set_caption("Tic Tac Toe")  # Setting the caption of the window
 
 
 class StartScreen:
@@ -26,134 +27,138 @@ class StartScreen:
             self.screen4
         ]
         self.current_screen_index = 0
-        self.headline_font = pygame.font.SysFont("Courier New", 40)
-        self.font = pygame.font.SysFont("Courier New", 25)
-        self.button_img = pygame.image.load("images/exit.png")
+        self.headline_font = pygame.font.SysFont("Courier New", 40)  # Setting headline font
+        self.font = pygame.font.SysFont("Courier New", 25)  # Setting font
+        self.button_img = pygame.image.load("images/exit.png")  # Loading button image
         self.button_rect = self.button_img.get_rect()
         self.button_rect.topright = (window_size[0] - 10, 10)
 
+    # Method for displaying screen 1
     def screen1(self):
         screen.fill((192, 192, 192))  # Black background
-        # Teken kopregel (alinea 1)
+        # Drawing headline (paragraph 1)
         headline_text = self.headline_font.render("Dit is een versie van Tic Tac Toe zonder machine learning.",
                                                   True, (0, 0, 0))
-        headline_rect = headline_text.get_rect(center=(window_size[0] // 2, 50))  # Aangepaste y-coördinaat
+        headline_rect = headline_text.get_rect(center=(window_size[0] // 2, 50))  # Adjusted y-coordinate
         screen.blit(headline_text, headline_rect)
 
-        # Voeg lege ruimte toe tussen alinea's
+        # Adding empty space between paragraphs
         pygame.draw.rect(screen, (192, 192, 192), (0, 180, window_size[0], 20))
 
-        # Teken tweede extra tekst (alinea 2)
+        # Drawing second extra text (paragraph 2)
         paragraph2_text = self.font.render("De regels van het spel.", True, (0, 0, 0))
-        paragraph2_rect = paragraph2_text.get_rect(center=(window_size[0] // 2, 140))  # Aangepaste y-coördinaat
-        paragraph2_rect.centerx = window_size[0] // 2  # Horizontaal centreren
+        paragraph2_rect = paragraph2_text.get_rect(center=(window_size[0] // 2, 140))  # Adjusted y-coordinate
+        paragraph2_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph2_text, paragraph2_rect)
 
-        # Teken tweede extra tekst (alinea 2)
+        # Drawing second extra text (paragraph 2)
         paragraph2_text = self.font.render(
             "De winnaar is degene die als eerste vier op een rij heeft, horizontaal, verticaal en diagonaal.", True,
             (0, 0, 0))
-        paragraph2_rect = paragraph2_text.get_rect(center=(window_size[0] // 2, 180))  # Aangepaste y-coördinaat
-        paragraph2_rect.centerx = window_size[0] // 2  # Horizontaal centreren
+        paragraph2_rect = paragraph2_text.get_rect(center=(window_size[0] // 2, 180))  # Adjusted y-coordinate
+        paragraph2_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph2_text, paragraph2_rect)
 
-        # Teken derde extra tekst (alinea 3)
+        # Drawing third extra text (paragraph 3)
         paragraph3_text = self.font.render(
             "Je kunt alleen X'en en O's binnen het speelveld plaatsen van de 6 bij 6 rooster.", True, (0, 0, 0))
-        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 210))  # Aangepaste y-coördinaat
-        paragraph3_rect.centerx = window_size[0] // 2  # Horizontaal centreren
+        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 210))  # Adjusted y-coordinate
+        paragraph3_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph3_text, paragraph3_rect)
 
-        # Draw exit button
+        # Drawing exit button
         screen.blit(self.button_img, self.button_rect)
         pygame.display.flip()
 
+    # Method for displaying screen 2
     def screen2(self):
         screen.fill((192, 192, 192))  # Black background
 
-        # Teken kopregel (alinea 1)
+        # Drawing headline (paragraph 1)
         headline_text = self.headline_font.render("Dit is een versie van Tic Tac Toe zonder machine learning.",
                                                   True, (0, 0, 0))
-        headline_rect = headline_text.get_rect(center=(window_size[0] // 2, 50))  # Aangepaste y-coördinaat
+        headline_rect = headline_text.get_rect(center=(window_size[0] // 2, 50))  # Adjusted y-coordinate
         screen.blit(headline_text, headline_rect)
 
-        # Teken derde extra tekst (alinea 3)
+        # Drawing third extra text (paragraph 3)
         paragraph3_text = self.font.render("Hoe je speelt.", True, (0, 0, 0))
-        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 140))  # Aangepaste y-coördinaat
-        paragraph3_rect.centerx = window_size[0] // 2  # Horizontaal centreren
+        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 140))  # Adjusted y-coordinate
+        paragraph3_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph3_text, paragraph3_rect)
 
-        # Teken derde extra tekst (alinea 3)
+        # Drawing third extra text (paragraph 3)
         paragraph3_text = self.font.render("Normaal gesproken speel je tegen een AI.", True, (0, 0, 0))
-        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 180))  # Aangepaste y-coördinaat
-        paragraph3_rect.centerx = window_size[0] // 2  # Horizontaal centreren
+        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 180))  # Adjusted y-coordinate
+        paragraph3_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph3_text, paragraph3_rect)
 
-        # Teken derde extra tekst (alinea 3)
+        # Drawing third extra text (paragraph 3)
         paragraph3_text = self.font.render("Maar voor nu moet je met iemand anders samen spelen.", True, (0, 0, 0))
-        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 210))  # Aangepaste y-coördinaat
-        paragraph3_rect.centerx = window_size[0] // 2  # Horizontaal centreren
+        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 210))  # Adjusted y-coordinate
+        paragraph3_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph3_text, paragraph3_rect)
 
-        # Teken derde extra tekst (alinea 3)
+        # Drawing third extra text (paragraph 3)
         paragraph3_text = self.font.render("Het idee is dus dat je om de beurt speelt.", True, (0, 0, 0))
-        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 240))  # Aangepaste y-coördinaat
-        paragraph3_rect.centerx = window_size[0] // 2  # Horizontaal centreren
+        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 240))  # Adjusted y-coordinate
+        paragraph3_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph3_text, paragraph3_rect)
 
-        # Teken derde extra tekst (alinea 3)
+        # Drawing third extra text (paragraph 3)
         paragraph3_text = self.font.render(
             "Jullie spelen allebei op dezelfde computer, waarbij X altijd begint en O kies nu wie begint als welke.",
             True, (0, 0, 0))
-        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 270))  # Aangepaste y-coördinaat
-        paragraph3_rect.centerx = window_size[0] // 2  # Horizontaal centreren
+        paragraph3_rect = paragraph3_text.get_rect(center=(window_size[0] // 2, 270))  # Adjusted y-coordinate
+        paragraph3_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph3_text, paragraph3_rect)
 
-        # Draw exit button
+        # Drawing exit button
         screen.blit(self.button_img, self.button_rect)
         pygame.display.flip()
 
+    # Method for displaying screen 3
     def screen3(self):
         screen.fill((192, 192, 192))  # Black background
 
-        # Teken kopregel (alinea 1)
+        # Drawing headline (paragraph 1)
         headline_text = self.headline_font.render("Dit is een versie van Tic Tac Toe zonder machine learning.",
                                                   True, (0, 0, 0))
-        headline_rect = headline_text.get_rect(center=(window_size[0] // 2, 50))  # Aangepaste y-coördinaat
+        headline_rect = headline_text.get_rect(center=(window_size[0] // 2, 50))  # Adjusted y-coordinate
         screen.blit(headline_text, headline_rect)
 
-        # Teken derde extra tekst (alinea 4)
+        # Drawing third extra text (paragraph 4)
         paragraph4_text = self.font.render("De bediening.", True, (0, 0, 0))
-        paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 140))  # Aangepaste y-coördinaat
-        paragraph4_rect.centerx = window_size[0] // 2  # Horizontaal centreren
+        paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 140))  # Adjusted y-coordinate
+        paragraph4_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph4_text, paragraph4_rect)
 
-        # Teken derde extra tekst (alinea 4)
+        # Drawing third extra text (paragraph 4)
         paragraph4_text = self.font.render("Je kunt met linkermuisklik X'en en O's plaatsen.", True, (0, 0, 0))
-        paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 180))  # Aangepaste y-coördinaat
-        paragraph4_rect.centerx = window_size[0] // 2  # Horizontaal centreren
+        paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 180))  # Adjusted y-coordinate
+        paragraph4_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph4_text, paragraph4_rect)
 
-        # Teken derde extra tekst (alinea 4)
+        # Drawing third extra text (paragraph 4)
         paragraph4_text = self.font.render("Wanneer het spel voorbij is, kun je op ESC klikken om af te sluiten.",
                                             True, (0, 0, 0))
         paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 210))
-        # Aangepaste y-coördinaat
-        paragraph4_rect.centerx = window_size[0] // 2  # Horizontaal centreren
+        # Adjusted y-coordinate
+        paragraph4_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph4_text, paragraph4_rect)
 
-        # Teken derde extra tekst (alinea 4)
+        # Drawing third extra text (paragraph 4)
         paragraph4_text = self.font.render(
             "Je kunt ook linkermuisknop drukken op de swirl rechtsboven na een spel om opnieuw te beginnen.", True,
             (0, 0, 0))
-        paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 240))  # Aangepaste y-coördinaat
-        paragraph4_rect.centerx = window_size[0] // 2  # Horizontaal centreren
+        paragraph4_rect = paragraph4_text.get_rect(center=(window_size[0] // 2, 240))  # Adjusted y-coordinate
+        paragraph4_rect.centerx = window_size[0] // 2  # Center horizontally
         screen.blit(paragraph4_text, paragraph4_rect)
 
-        # Draw exit button
+        # Drawing exit button
         screen.blit(self.button_img, self.button_rect)
         pygame.display.flip()
 
+    # Method for displaying screen 4
     def screen4(self):
         screen.fill((192, 192, 192))  # Black background
         paragraph4_text = self.font.render("Als je alles begrijpt, kun je rechtsboven op het kruisje klikken en beginnen.",
@@ -162,19 +167,22 @@ class StartScreen:
         paragraph4_rect.centerx = window_size[0] // 2
         screen.blit(paragraph4_text, paragraph4_rect)
 
-        # Draw exit button
+        # Drawing exit button
         screen.blit(self.button_img, self.button_rect)
         pygame.display.flip()
 
+    # Method to show current screen
     def show_current_screen(self):
         self.screens[self.current_screen_index]()
 
+    # Method to move to the next screen
     def next_screen(self):
         self.current_screen_index += 1
         if self.current_screen_index >= len(self.screens):
             return True  # Transition to the main game
         return False
 
+    # Method to handle events
     def handle_events(self):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -218,6 +226,7 @@ class TicTacToe:
         self.restart_button_rect = self.restart_button_img.get_rect()
         self.restart_button_rect.topright = (window_size[0] - 10, 10)
 
+    # Method to draw the game grid
     def _draw_table(self):
         for i in range(7):
             pygame.draw.line(screen, self.table_color, (self.grid_offset_x + self.cell_size * i, self.grid_offset_y),
@@ -227,9 +236,11 @@ class TicTacToe:
                              (self.grid_offset_x + self.table_size, self.grid_offset_y + self.cell_size * i),
                              self.cell_size // 8)
 
+    # Method to switch players
     def _change_player(self):
         self.player = "O" if self.player == "X" else "X"
 
+    # Method for player move
     def _move(self, pos):
         try:
             grid_x = (pos[0] - self.grid_offset_x) // self.cell_size
@@ -247,6 +258,7 @@ class TicTacToe:
         except IndexError:
             print("Click inside the table only")
 
+    # Method for AI move
     def _ai_move(self):
         # Simple AI: just pick the first available cell
         for i in range(6):
@@ -258,6 +270,7 @@ class TicTacToe:
                     self._change_player()
                     return
 
+    # Method to draw X or O on the grid
     def _draw_char(self, x, y, player):
         if player == "O":
             img = pygame.image.load("images/Tc-O.png")
@@ -267,6 +280,7 @@ class TicTacToe:
         screen.blit(img, (self.grid_offset_x + x * self.cell_size + self.table_space // 2,
                           self.grid_offset_y + y * self.cell_size + self.table_space // 2))
 
+    # Method to display game messages
     def _message(self):
         message = ""
         if self.winner is not None:
@@ -282,40 +296,54 @@ class TicTacToe:
 
         screen.blit(self.restart_button_img, self.restart_button_rect)
 
+    # Method to check game status
     def _game_check(self):
+        # Check horizontal wins
         for i in range(6):
             for j in range(3):
                 if self.table[i][j] != "-" and self.table[i][j] == self.table[i][j + 1] == self.table[i][j + 2] == \
                         self.table[i][j + 3]:
+                    # If a win is detected, draw the winning pattern, set the winner, and stop the game
                     self._pattern_strike((i, j), (i, j + 3))
                     self.winner = self.player
                     self.taking_move = False
                     return
-                if self.table[j][i] != "-" and self.table[j][i] == self.table[j + 1][i] == self.table[j + 2][i] == \
-                        self.table[j + 3][i]:
-                    self._pattern_strike((j, i), (j + 3, i))
+        # Check vertical wins
+        for i in range(3):
+            for j in range(6):
+                if self.table[i][j] != "-" and self.table[i][j] == self.table[i + 1][j] == self.table[i + 2][j] == \
+                        self.table[i + 3][j]:
+                    # If a win is detected, draw the winning pattern, set the winner, and stop the game
+                    self._pattern_strike((i, j), (i + 3, j))
                     self.winner = self.player
                     self.taking_move = False
                     return
+        # Check diagonal (from top left to bottom right) wins
         for i in range(3):
             for j in range(3):
                 if self.table[i][j] != "-" and self.table[i][j] == self.table[i + 1][j + 1] == self.table[i + 2][
                     j + 2] == self.table[i + 3][j + 3]:
+                    # If a win is detected, draw the winning pattern, set the winner, and stop the game
                     self._pattern_strike((i, j), (i + 3, j + 3))
                     self.winner = self.player
                     self.taking_move = False
                     return
+        # Check diagonal (from top right to bottom left) wins
         for i in range(3):
             for j in range(3, 6):
                 if self.table[i][j] != "-" and self.table[i][j] == self.table[i + 1][j - 1] == self.table[i + 2][
                     j - 2] == self.table[i + 3][j - 3]:
+                    # If a win is detected, draw the winning pattern, set the winner, and stop the game
                     self._pattern_strike((i, j), (i + 3, j - 3))
                     self.winner = self.player
                     self.taking_move = False
                     return
+        # If there are no wins and the grid is full, it's a draw
         if all(cell != "-" for row in self.table for cell in row):
             self.taking_move = False
 
+
+    # Method to draw winning pattern
     def _pattern_strike(self, start_point, end_point):
         mid_val = self.cell_size // 2
         start_x, start_y = self.grid_offset_x + start_point[0] * self.cell_size + mid_val, self.grid_offset_y + \
@@ -324,6 +352,7 @@ class TicTacToe:
                        end_point[1] * self.cell_size + mid_val
         pygame.draw.line(screen, self.line_color, (start_x, start_y), (end_x, end_y), self.cell_size // 8)
 
+    # Method to restart the game
     def restart_game(self):
         self.player = "X"
         self.winner = None
@@ -332,6 +361,7 @@ class TicTacToe:
         screen.fill(self.background_color)
         self._draw_table()
 
+    # Main method to run the game
     def main(self):
         screen.fill(self.background_color)
         self._draw_table()
