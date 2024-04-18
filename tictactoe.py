@@ -1,6 +1,5 @@
 import pygame  # Importing pygame library for game development
 import os  # Importing os module for interacting with the operating system
-import random  # Importing random module for generating random numbers
 
 # Centers the window
 os.environ['SDL_VIDEO_CENTERED'] = '1'  
@@ -32,6 +31,7 @@ class StartScreen:
         self.button_img = pygame.image.load("images/exit.png")  # Loading button image
         self.button_rect = self.button_img.get_rect()
         self.button_rect.topright = (window_size[0] - 10, 10)
+        self.depth = 4  # Depth for minimax algorithm
 
     # Method for displaying screen 1
     def screen1(self):
@@ -195,7 +195,7 @@ class StartScreen:
 
 
 class TicTacToe:
-    def __init__(self, table_size):
+    def __init__(self, table_size, depth):
         self.table_size = min(window_size) - 100
         self.cell_size = self.table_size // 6
         self.table_space = self.cell_size // 3
@@ -207,6 +207,8 @@ class TicTacToe:
         self.winner = None
         self.taking_move = True
         self.running = True
+        self.depth = depth  # Depth for minimax algorithm
+
         self.table = []
         for col in range(6):
             self.table.append([])
@@ -226,6 +228,7 @@ class TicTacToe:
         self.restart_button_rect = self.restart_button_img.get_rect()
         self.restart_button_rect.topright = (window_size[0] - 10, 10)
 
+
     # Method to draw the game grid
     def _draw_table(self):
         for i in range(7):
@@ -243,45 +246,82 @@ class TicTacToe:
     # Method for player move
     def _move(self, pos):
         try:
-            # Calculate grid position based on mouse click
             grid_x = (pos[0] - self.grid_offset_x) // self.cell_size
             grid_y = (pos[1] - self.grid_offset_y) // self.cell_size
 
-            # Check if the click is within the grid boundaries
             if 0 <= grid_x < 6 and 0 <= grid_y < 6:
-                # Check if the clicked cell is empty and it's the player's turn
                 if self.table[grid_x][grid_y] == "-" and self.player == "X":
-                    # Update the table with player's move
                     self.table[grid_x][grid_y] = self.player
-                    # Draw X or O on the grid
                     self._draw_char(grid_x, grid_y, self.player)
-                    # Check if the game has ended after the player's move
                     self._game_check()
-                    # Switch to the AI's turn
                     self._change_player()
-                    # If the game is still ongoing, let the AI make a move
                     if not self.taking_move:
                         return
                     self._ai_move()
         except IndexError:
-            # Print error message if click is outside the grid
             print("Click inside the table only")
 
-    # Method for AI move
-    def _ai_move(self):
-        # Simple AI: just pick the first available empty cell
+   # Method to get empty cells on the board
+    def _empty_cells(self):
+        cells = []
         for i in range(6):
             for j in range(6):
                 if self.table[i][j] == "-":
-                    # Update the table with AI's move
-                    self.table[i][j] = self.ai_player
-                    # Draw X or O on the grid for AI's move
-                    self._draw_char(i, j, self.ai_player)
-                    # Check if the game has ended after AI's move
-                    self._game_check()
-                    # Switch to the player's turn
-                    self._change_player()
-                    return  # AI made its move, so exit the loop and function
+                    cells.append((i, j))
+        return cells
+
+    # Method to implement Minimax algorithm with alpha-beta pruning
+    def _minimax(self, depth, alpha, beta, maximizing_player):
+        if depth == 0 or not self.taking_move:
+            if self.winner == self.ai_player:
+                return 1
+            elif self.winner == self.player:
+                return -1
+            else:
+                return 0
+
+        if maximizing_player:
+            max_eval = float("-inf")
+            for move in self._empty_cells():
+                self.table[move[0]][move[1]] = self.ai_player
+                eval = self._minimax(depth - 1, alpha, beta, False)
+                self.table[move[0]][move[1]] = "-"
+                max_eval = max(max_eval, eval)
+                alpha = max(alpha, eval)
+                if beta <= alpha:
+                    break  # Beta cutoff
+            return max_eval
+        else:
+            min_eval = float("inf")
+            for move in self._empty_cells():
+                self.table[move[0]][move[1]] = self.player
+                eval = self._minimax(depth - 1, alpha, beta, True)
+                self.table[move[0]][move[1]] = "-"
+                min_eval = min(min_eval, eval)
+                beta = min(beta, eval)
+                if beta <= alpha:
+                    break  # Alpha cutoff
+            return min_eval
+
+    def _ai_move(self):
+        best_move = None
+        best_eval = float("-inf")
+        alpha = float("-inf")  # Initial alpha value
+        beta = float("inf")  # Initial beta value
+        for move in self._empty_cells():
+            self.table[move[0]][move[1]] = self.ai_player
+            eval = self._minimax(self.depth, alpha, beta, False)  # Initial call with alpha and beta
+            self.table[move[0]][move[1]] = "-"
+            if eval > best_eval:
+                best_eval = eval
+                best_move = move
+            alpha = max(alpha, eval)
+
+        if best_move:
+            self.table[best_move[0]][best_move[1]] = self.ai_player
+            self._draw_char(best_move[0], best_move[1], self.ai_player)
+            self._game_check()
+            self._change_player()
 
     # Method to draw X or O on the grid
     def _draw_char(self, x, y, player):
@@ -407,5 +447,6 @@ if __name__ == "__main__":
             break
         start_screen.show_current_screen()
 
-    g = TicTacToe(window_size[0])
+    depth = start_screen.depth  # Get depth from StartScreen
+    g = TicTacToe(window_size[0], depth)  # Pass depth to TicTacToe
     g.main()
