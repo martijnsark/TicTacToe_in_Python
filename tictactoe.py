@@ -1,5 +1,6 @@
 import pygame  # Importing pygame library for game development
 import os  # Importing os module for interacting with the operating system
+import copy
 
 # Centers the window
 os.environ['SDL_VIDEO_CENTERED'] = '1'  
@@ -31,7 +32,7 @@ class StartScreen:
         self.button_img = pygame.image.load("images/exit.png")  # Loading button image
         self.button_rect = self.button_img.get_rect()
         self.button_rect.topright = (window_size[0] - 10, 10)
-        self.depth = 8  # Depth for minimax algorithm
+        self.depth = 4  # Depth for minimax algorithm
 
     # Method for displaying screen 1
     def screen1(self):
@@ -261,16 +262,8 @@ class TicTacToe:
         except IndexError:
             print("Click inside the table only")
 
-   # Method to get empty cells on the board
-    def _empty_cells(self):
-        cells = []
-        for i in range(6):
-            for j in range(6):
-                if self.table[i][j] == "-":
-                    cells.append((i, j))
-        return cells
 
-    # Method to implement Minimax algorithm with alpha-beta pruning
+
     def _minimax(self, depth, alpha, beta, maximizing_player):
         if depth == 0 or not self.taking_move:
             if self.winner == self.ai_player:
@@ -283,9 +276,10 @@ class TicTacToe:
         if maximizing_player:
             max_eval = float("-inf")
             for move in self._empty_cells():
-                self.table[move[0]][move[1]] = self.ai_player
+                # Create a deepcopy of the current game board
+                board_copy = copy.deepcopy(self.table)
+                board_copy[move[0]][move[1]] = self.ai_player
                 eval = self._minimax(depth - 1, alpha, beta, False)
-                self.table[move[0]][move[1]] = "-"
                 max_eval = max(max_eval, eval)
                 alpha = max(alpha, eval)
                 if beta <= alpha:
@@ -294,9 +288,10 @@ class TicTacToe:
         else:
             min_eval = float("inf")
             for move in self._empty_cells():
-                self.table[move[0]][move[1]] = self.player
+                # Create a deepcopy of the current game board
+                board_copy = copy.deepcopy(self.table)
+                board_copy[move[0]][move[1]] = self.player
                 eval = self._minimax(depth - 1, alpha, beta, True)
-                self.table[move[0]][move[1]] = "-"
                 min_eval = min(min_eval, eval)
                 beta = min(beta, eval)
                 if beta <= alpha:
@@ -309,9 +304,10 @@ class TicTacToe:
         alpha = float("-inf")  # Initial alpha value
         beta = float("inf")  # Initial beta value
         for move in self._empty_cells():
-            self.table[move[0]][move[1]] = self.ai_player
+            # Create a deepcopy of the current game board
+            board_copy = copy.deepcopy(self.table)
+            board_copy[move[0]][move[1]] = self.ai_player
             eval = self._minimax(self.depth, alpha, beta, False)  # Initial call with alpha and beta
-            self.table[move[0]][move[1]] = "-"
             if eval > best_eval:
                 best_eval = eval
                 best_move = move
@@ -322,6 +318,15 @@ class TicTacToe:
             self._draw_char(best_move[0], best_move[1], self.ai_player)
             self._game_check()
             self._change_player()
+
+   # Method to get empty cells on the board
+    def _empty_cells(self):
+        cells = []
+        for i in range(6):
+            for j in range(6):
+                if self.table[i][j] == "-":
+                    cells.append((i, j))
+        return cells
 
     # Method to draw X or O on the grid
     def _draw_char(self, x, y, player):
