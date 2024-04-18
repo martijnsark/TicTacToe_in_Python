@@ -31,7 +31,7 @@ class StartScreen:
         self.button_img = pygame.image.load("images/exit.png")  # Loading button image
         self.button_rect = self.button_img.get_rect()
         self.button_rect.topright = (window_size[0] - 10, 10)
-        self.depth = 4  # Depth for minimax algorithm
+        self.depth = 8  # Depth for minimax algorithm
 
     # Method for displaying screen 1
     def screen1(self):
