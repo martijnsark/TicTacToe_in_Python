@@ -264,6 +264,7 @@ class TicTacToe:
 
 
 
+
     def _minimax(self, depth, alpha, beta, maximizing_player):
         if depth == 0 or not self.taking_move:
             if self.winner == self.ai_player:
