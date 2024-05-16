@@ -2,11 +2,19 @@
 
 
 ## credits:
+
+### the main game version:
+
 In this project i used this website as my starting point: https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
 
 I ended up using their icon assets and, i used their script at the bottom of the website as my baseline to base my game off.
 
-I also used a icon from icons8 so to credit them here's there link: icons8.com
+I also used icons from icons8 so to credit them here's there link: icons8.com
+
+this concludes the credits of the first version which includes:
+- tictactoe.py
+- tictactoe.ipynb
+- the images in the "images" folder
 
 <br><br>
 
