@@ -3,7 +3,9 @@
 
 ## credits:
 
-### the first game version:
+Chat GPT-3.5 was used to support development in all versions.
+
+### the first game Credits:
 
 In this project version i used this website as my starting point: https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
 
@@ -11,13 +13,28 @@ I ended up using their icon assets and, i used their script at the bottom of the
 
 I also used icons from icons8 so to credit them here's there link: icons8.com
 
-this concludes the credits of the first version which includes:
+this concludes the credits of the first version which included:
 - tictactoe.py
 - tictactoe.ipynb
 - the images in the "images" folder
 
-### the second game version:
+<br><br>
 
+### the second game Credits:
+
+In this project version i used a script made by my client as starting point.
+
+In this version i shifted my focus from user expierence to functionality.
+
+all features i intended to get working work in this version how ever, this was at cost of the visual quality and User-friendliness
+
+this concludes the credits  of the second version which included:
+- in the "other-versions-of-the-game" folder,
+  - you can find the "2.0less-graphical-AI-foccused-game" folder,
+    - which holds this "MiniMax_AI_implimentation_game.ipynb" Jupyter notebook file.
+
+
+<br><br>
 
 
 <br><br>
