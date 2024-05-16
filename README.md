@@ -17,12 +17,10 @@ I ended up using their icon assets and, i used their script at the bottom of the
 
 I also used icons from icons8 so to credit them here's there link: icons8.com
 
-this concludes the credits of the first version which included:
-- tictactoe.py
-- tictactoe.ipynb
-- the images in the "images" folder
+this concludes the credits of the first version:
 
 <br><br>
+
 
 
 
@@ -31,6 +29,7 @@ this concludes the credits of the first version which included:
 
 In this project version i used a script made by my client as starting point.
 
+this concludes the credits of the second version:
 <br><br>
 
 
@@ -53,7 +52,8 @@ I'm actively adapting the code to my own project and i plan on integrating machi
 I'm using Visual studio code as my GUI.
   - I added the environment i made on Anaconda through CTRL + SHIFT + P and then selected "select interpreter"
   - I added "Pygame" through this "pip install pygame" command in the terminal this was than applied to my Anaconda environment.
-  - I added the Python plug in.
+  - I added the Python plug-in.
+  - I added the Jupyter notebook plug-in.
 
 I'm using Anaconda as my package manager.
 - I added Jupyter Notebooks
@@ -70,6 +70,18 @@ I'm using Anaconda as my package manager.
 
 ### The first game version details:
 
+This part of the project was focussed on core game-play mechanics, and creating the game with decent graphics like using images as sprites.
+
+I worked based on iterations and this version took two iterations to make.
+
+These are the related files to this version:
+- tictactoe.py
+- tictactoe.ipynb
+- Go to the "images" folder
+  - and download all images.
+
+  The code for the .ipynb file only executes the code that is in the tictactoe.py file.
+
 <br><br>
 
 
@@ -81,14 +93,16 @@ I'm using Anaconda as my package manager.
 
 ### The second game version details:
 
-In this version i shifted my focus from user expierence to functionality.
+In this version i shifted my focus from user experience to functionality.
 
 all features i intended to get working work in this version how ever, this was at cost of the visual quality and User-friendliness
 
-this concludes the credits  of the second version which included:
+I worked based on iterations and this version took one iterations to make.
+
+These are the related files to this version:
 - in the "other-versions-of-the-game" folder,
-  - you can find the "2.0less-graphical-AI-foccused-game" folder,
-    - which holds this "MiniMax_AI_implimentation_game.ipynb" Jupyter notebook file.
+  - you can find the "2.0less-graphical-AI-focused-game" folder,
+    - which holds this "MiniMax_AI_implementation_game.ipynb" Jupyter notebook file.
 ^this is the only file you need
 
 <br><br>
@@ -109,16 +123,9 @@ Both scripts in my version use a Anaconda Environment with packages and if you'r
 
 
 
-## 1.1:
+## How to activate/use .ipynb files:
 
-Download these files from this project.
-- tictactoe.py
-- tictactoe.ipynb
-- the images in the "images" folder
-
-Open the .ipynb file and click on the execute arrow.
-
-The code for the .ipynb file only executes the code that is in the tictactoe.py file.
+Open the .ipynb file and click on the execute arrow at the left top from the segment you want to activate/use.
 
 
 
