@@ -1,11 +1,15 @@
 # TicTacToe_in_Python
 
 
-## credits:
+## universal credits:
 
 Chat GPT-3.5 was used to support development in all versions.
 
-### the first game Credits:
+
+
+
+
+### The first game version Credits:
 
 In this project version i used this website as my starting point: https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
 
@@ -20,30 +24,29 @@ this concludes the credits of the first version which included:
 
 <br><br>
 
-### the second game Credits:
+
+
+
+### The second game version Credits:
 
 In this project version i used a script made by my client as starting point.
 
-In this version i shifted my focus from user expierence to functionality.
-
-all features i intended to get working work in this version how ever, this was at cost of the visual quality and User-friendliness
-
-this concludes the credits  of the second version which included:
-- in the "other-versions-of-the-game" folder,
-  - you can find the "2.0less-graphical-AI-foccused-game" folder,
-    - which holds this "MiniMax_AI_implimentation_game.ipynb" Jupyter notebook file.
-
-
 <br><br>
 
 
-<br><br>
+
+
+
 
 ## the goal:
 
 I'm actively adapting the code to my own project and i plan on integrating machine learning to play the O side of the game.
 
 <br><br>
+
+
+
+
 
 ## the software i used:
 
@@ -56,9 +59,43 @@ I'm using Anaconda as my package manager.
 - I added Jupyter Notebooks
 - I added Qt console
 
-Currently no machine learning of any kind has been added.
+<br><br>
+
+
+
+
+
+
+
+
+### The first game version details:
 
 <br><br>
+
+
+
+
+
+
+
+
+### The second game version details:
+
+In this version i shifted my focus from user expierence to functionality.
+
+all features i intended to get working work in this version how ever, this was at cost of the visual quality and User-friendliness
+
+this concludes the credits  of the second version which included:
+- in the "other-versions-of-the-game" folder,
+  - you can find the "2.0less-graphical-AI-foccused-game" folder,
+    - which holds this "MiniMax_AI_implimentation_game.ipynb" Jupyter notebook file.
+^this is the only file you need
+
+<br><br>
+
+
+
+
 
 ## how do i execute the code of Version-1?
 
@@ -68,18 +105,32 @@ I created two ways depending on how you want to use this project:
 
 Both scripts in my version use a Anaconda Environment with packages and if you're code doesn't work check the section above "the software i used"
 
-## 1:
 
-Download all files in this project.
+
+
+
+## 1.1:
+
+Download these files from this project.
+- tictactoe.py
+- tictactoe.ipynb
+- the images in the "images" folder
 
 Open the .ipynb file and click on the execute arrow.
 
 The code for the .ipynb file only executes the code that is in the tictactoe.py file.
 
 
-## 2:
 
-You will need all files except the tictactoe.ipynb file.
+
+
+
+
+## 1.2:
+
+Download these files from this project.
+- tictactoe.py
+- the images in the "images" folder
 
 You will need to enter the following every time you open Visual studio code to establish the folder you're working in:
 
