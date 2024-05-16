@@ -3,9 +3,9 @@
 
 ## credits:
 
-### the main game version:
+### the first game version:
 
-In this project i used this website as my starting point: https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
+In this project version i used this website as my starting point: https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
 
 I ended up using their icon assets and, i used their script at the bottom of the website as my baseline to base my game off.
 
@@ -15,6 +15,10 @@ this concludes the credits of the first version which includes:
 - tictactoe.py
 - tictactoe.ipynb
 - the images in the "images" folder
+
+### the second game version:
+
+
 
 <br><br>
 
@@ -39,7 +43,7 @@ Currently no machine learning of any kind has been added.
 
 <br><br>
 
-## how do i execute the code?
+## how do i execute the code of Version-1?
 
 I created two ways depending on how you want to use this project:
 - 1 using the .ipynb file
