@@ -123,6 +123,7 @@ Both scripts in my version use a Anaconda Environment with packages and if you'r
 
 
 
+
 ## How to activate/use .ipynb files:
 
 Open the .ipynb file and click on the execute arrow at the left top from the segment you want to activate/use.
