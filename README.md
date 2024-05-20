@@ -405,7 +405,7 @@ Open the terminaal:
 
 Ensure you are in the Terminal tab at the bottem of you're screen:
 
-<img width="600" height="400" src="Readme_Images/terminaltabsimg.png" alt="image">
+<img width="600" height="200" src="Readme_Images/terminaltabsimg.png" alt="image">
 
 <br><br>
 
