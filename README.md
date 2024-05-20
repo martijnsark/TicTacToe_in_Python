@@ -11,7 +11,7 @@ Chat GPT-3.5 was gebruikt bij het helpen maken van alle versies.
 
 
 
-### The first game version Credits:
+### De eerste spelversie Credits:
 
 In deze project versie gebruikte ik deze website als mijn starting punt: https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
 
