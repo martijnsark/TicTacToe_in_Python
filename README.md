@@ -159,6 +159,7 @@ Dit is het enige bestand dat u nodig hebt
 
 Download het .ipynb-bestand en open het door te klikken op de pijl uitvoeren linksboven van het segment dat u wilt activeren/gebruiken.
 
+<img width="600" height="400" src="Readme_Images/executearrowimg.png" alt="image">
 
 <br><br>
 
