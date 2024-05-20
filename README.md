@@ -49,9 +49,15 @@ Hiermee zijn de credits van de tweede versie afgelopen:
 
 
 
-## the goal:
+## De goal:
 
-Ik ben de code actief aan het aanpassen aan mijn eigen project en ik ben van plan om machine learning te integreren om de O-kant van het spel te spelen.
+De opdracht begon als de beschrijving van: een zero-sum bordspel met machine learning als tegenstander met een grafische gebruikersinterface.
+
+De opdracht werd verschoven naar een Tic Tac Toe-spel in een raster van 6 bij 6 met Minimax als machine learning.
+
+De doelgroep waren volwassenen met weinig tot geen technische achtergrond.
+
+De output van het eindproduct was om te laten zien hoe machine learning/AI invloed kan hebben op hoe dingen spelen, zoals in dit geval de moeilijkheidsgraad van het spel.
 
 <br><br>
 
@@ -232,8 +238,13 @@ this concludes the credits of the second version:
 
 ## the goal:
 
-I'm actively adapting the code to my own project and i plan on integrating machine learning to play the O side of the game.
+The assigment started as the description of: a zero-sum boardgame using machine learning as opponent with a Graphical User Interface.
 
+The assigenment whas shifted to be a Tic Tac Toe game in a 6 by 6 grid using Minimax as machine learning.
+
+The target audience was adults with little to none techinical background.
+
+The output of the end product was to show how machine learning/AI can effect how things play out as in this case it was the AI difficulty of the game
 <br><br>
 
 
