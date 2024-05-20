@@ -5,7 +5,7 @@
 <br><br>
 
 
-## Universeel credits:
+## Universele credits:
 
 Chat GPT-3.5 was gebruikt bij het helpen maken van alle versies.
 
