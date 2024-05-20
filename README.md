@@ -65,7 +65,7 @@ De output van het eindproduct was om te laten zien hoe machine learning/AI invlo
 
 
 
-## De software die ik heb gebruikt:
+## De software die ik gebruikt heb:
 
 Ik gebruik Visual studio code als mijn GUI.
   - Ik voegde toe een environment die ik gemaakt heb op Anaconda via CTRL + SHIFT + P en dan selecteer "select interpreter"
