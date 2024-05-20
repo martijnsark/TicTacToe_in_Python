@@ -204,7 +204,7 @@ Nu de map correct is, moet u de volgende code invoeren telkens wanneer u uw code
 python .\"SchrijfPyGameTitle.py"
 
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
