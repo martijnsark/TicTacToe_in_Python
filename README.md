@@ -1,4 +1,186 @@
-# TicTacToe_in_Python
+# Dutch_TicTacToe_in_Python
+
+
+## universal credits:
+
+Chat GPT-3.5 was gebruikt bij het helpen maken van alle versies.
+
+<br><br>
+
+
+
+
+
+### The first game version Credits:
+
+In deze project versie gebruikte ik deze website als mijn starting punt: https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
+
+<img width="600" height="400" src="Readme_Images/v1credit.png" alt="image">
+
+<br><br>
+
+Ik heb uiteindelijk hun iconen gebruikt en ik heb hun script onderaan de website gebruikt als basis voor mijn spel.
+
+Ik heb ook iconen van icons8 gebruikt, dus om hen te crediteren is hier hun link: icons8.com
+
+<img width="600" height="400" src="Readme_Images/v2credit.png" alt="image">
+
+Hiermee zijn de credits van de eerste versie afgelopen:
+
+<br><br>
+
+
+
+
+
+### The second game version Credits:
+
+In deze projectversie heb ik een script van mijn klant als uitgangspunt gebruikt.
+
+<img width="600" height="400" src="Readme_Images/v3credit.png" alt="image">
+
+Hiermee zijn de credits van de tweede versie afgelopen:
+
+<br><br>
+
+
+
+
+
+
+## the goal:
+
+Ik ben de code actief aan het aanpassen aan mijn eigen project en ik ben van plan om machine learning te integreren om de O-kant van het spel te spelen.
+
+<br><br>
+
+
+
+
+
+## the software i used:
+
+I'm using Visual studio code as my GUI.
+  - Ik voegde toe een environment die ik gemaakt heb op Anaconda via CTRL + SHIFT + P en dan selecteer "select interpreter"
+  - Ik voegde toe "Pygame" via de "pip install pygame" command in de terminal dit was dan toegevoegd aan mijn Anaconda environment.
+  - Ik voegde toe Python plug-in.
+  - Ik voegde toe Jupyter notebook plug-in.
+
+Ik gebruik Anaconda als mijn pakketbeheerder.
+- Ik voegde toeJupyter Notebooks
+- Ik voegde toe Qt console
+
+<br><br>
+
+
+
+
+
+
+
+
+### De details van de eerste spelversie:
+
+Dit deel van het project was gericht op de belangrijkste spelmechanismen en het maken van het spel met fatsoenlijke graphics, zoals het gebruik van afbeeldingen als sprites.
+
+Ik werkte op basis van iteraties en het duurde twee iteraties om deze versie te maken.
+
+Dit zijn de gerelateerde bestanden van deze versie:
+- tictactoe.py
+- tictactoe.ipynb
+- Ga naar de "images" folder
+  - en download alle foto's.
+
+ De code voor het .ipynb bestand voert alleen de code uit die in het tictactoe.py bestand staat.
+
+<br><br>
+
+
+
+
+
+
+
+
+### Details van de tweede spelversie:
+
+In deze versie heb ik mijn focus verlegd van gebruikerservaring naar functionaliteit.
+
+Alle functies die ik wilde laten werken, werken in deze versie, maar dit ging ten koste van de visuele kwaliteit en de gebruikersvriendelijkheid.
+
+Ik heb gewerkt op basis van iteraties en deze versie heeft één iteratie gekost om te maken.
+
+Dit zijn de gerelateerde bestanden van deze versie:
+- in de map “andere versies van het spel”,
+  - kun je de map “2.0less-graphical-AI-focused-game” vinden,
+    - die dit Jupyter-notitieboekbestand “MiniMax_AI_implementation_game.ipynb” bevat.
+Dit is het enige bestand dat u nodig hebt
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+## Hoe activeer/gebruik ik .ipynb bestanden:
+
+Download het .ipynb-bestand en open het door te klikken op de pijl uitvoeren linksboven van het segment dat u wilt activeren/gebruiken.
+
+
+<br><br>
+
+
+
+
+
+
+##  hoe .py-bestanden te activeren/gebruiken:
+
+Download deze bestanden van dit project.
+- tictactoe.py
+- de afbeeldingen in de map “images
+
+Elke keer dat je Visual studio code opent, moet je het volgende invoeren om vast te stellen in welke map je werkt:
+
+cd "insert directory of tictactoe.py location" 
+
+Merk op dat de afbeeldingen in een map Afbeeldingen moeten staan in de map van de tictactoe.py locatie.
+
+Nu de map correct is, moet u de volgende code invoeren telkens wanneer u uw code wilt uitvoeren:
+
+python .\"InsertPyGameTitle.py"
+
+
+<br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# English_TicTacToe_in_Python
 
 
 ## universal credits:
@@ -36,6 +218,8 @@ this concludes the credits of the first version:
 ### The second game version Credits:
 
 In this project version i used a script made by my client as starting point.
+
+<img width="600" height="400" src="Readme_Images/v3credit.png" alt="image">
 
 this concludes the credits of the second version:
 <br><br>
