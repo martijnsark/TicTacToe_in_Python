@@ -100,6 +100,10 @@ Dit deel van het project was gericht op de belangrijkste spelmechanismen en het 
 
 Ik werkte op basis van iteraties en het duurde twee iteraties om deze versie te maken.
 
+<img width="600" height="400" src="Readme_Images/gameplayimg1.png" alt="image">
+
+<br><br>
+
 Dit zijn de gerelateerde bestanden van deze versie:
 - tictactoe.py
 - tictactoe.ipynb
@@ -124,6 +128,10 @@ In deze versie heb ik mijn focus verlegd van gebruikerservaring naar functionali
 Alle functies die ik wilde laten werken, werken in deze versie, maar dit ging ten koste van de visuele kwaliteit en de gebruikersvriendelijkheid.
 
 Ik heb gewerkt op basis van iteraties en deze versie heeft één iteratie gekost om te maken.
+
+<img width="600" height="400" src="Readme_Images/gameplayimg2.png" alt="image">
+
+<br><br>
 
 Dit zijn de gerelateerde bestanden van deze versie:
 - in de map “andere versies van het spel”,
@@ -161,15 +169,32 @@ Download deze bestanden van dit project.
 - tictactoe.py
 - de afbeeldingen in de map “images
 
-Elke keer dat je Visual studio code opent, moet je het volgende invoeren om vast te stellen in welke map je werkt:
+Elke keer dat je Visual studio code opent, moet je het volgende herhalen om vast te stellen in welke map je werkt:
 
-cd "insert directory of tictactoe.py location" 
+Open de terminaal:
+
+<img width="600" height="400" src="Readme_Images/openterminalimg.png" alt="image">
+
+<br><br>
+
+Maak zeker dat onderaan op je scherm op Terminal tab staat:
+
+<img width="600" height="400" src="Readme_Images/terminaltabsimg.png" alt="image">
+
+<br><br>
+
+Schrijf in de terminal: cd "schrijf directory van tictactoe.py locatie" 
 
 Merk op dat de afbeeldingen in een map Afbeeldingen moeten staan in de map van de tictactoe.py locatie.
 
+Zoals hier: 
+<img width="600" height="400" src="Readme_Images/foldersimg.png" alt="image">
+
+<br><br>
+
 Nu de map correct is, moet u de volgende code invoeren telkens wanneer u uw code wilt uitvoeren:
 
-python .\"InsertPyGameTitle.py"
+python .\"SchrijfPyGameTitle.py"
 
 
 <br><br><br><br><br><br>
@@ -295,6 +320,10 @@ This part of the project was focussed on core game-play mechanics, and creating 
 
 I worked based on iterations and this version took two iterations to make.
 
+<img width="600" height="400" src="Readme_Images/gameplayimg1.png" alt="image">
+
+<br><br>
+
 These are the related files to this version:
 - tictactoe.py
 - tictactoe.ipynb
@@ -320,6 +349,10 @@ all features i intended to get working work in this version how ever, this was a
 
 I worked based on iterations and this version took one iterations to make.
 
+<img width="600" height="400" src="Readme_Images/gameplayimg2.png" alt="image">
+
+<br><br>
+
 These are the related files to this version:
 - in the "other-versions-of-the-game" folder,
   - you can find the "2.0less-graphical-AI-focused-game" folder,
@@ -342,6 +375,7 @@ These are the related files to this version:
 
 Download and open the .ipynb file proceed by click on the execute arrow at the left top from the segment you want to activate/use.
 
+<img width="600" height="400" src="Readme_Images/executearrowimg.png" alt="image">
 
 <br><br>
 
@@ -356,11 +390,28 @@ Download these files from this project.
 - tictactoe.py
 - the images in the "images" folder
 
-You will need to enter the following every time you open Visual studio code to establish the folder you're working in:
+You will need to repeat the following every time you open Visual studio code to establish the folder you're working in:
 
-cd "insert directory of tictactoe.py location" 
+Open the terminaal:
 
-do note that the images should be in a Images folder inside the directory of the tictactoe.py location
+<img width="600" height="400" src="Readme_Images/openterminalimg.png" alt="image">
+
+<br><br>
+
+Ensure you are in the Terminal tab at the bottem of you're screen:
+
+<img width="600" height="400" src="Readme_Images/terminaltabsimg.png" alt="image">
+
+<br><br>
+
+write in the terminal: cd "insert directory of tictactoe.py location" 
+
+do note that the images should be in a Images folder inside the directory of the tictactoe.py location.
+
+Like this: 
+<img width="600" height="400" src="Readme_Images/foldersimg.png" alt="image">
+
+<br><br>
 
 Now that the directory is correct you wil need to enter the following code every time you want to execute you're code:
 
