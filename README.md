@@ -15,11 +15,12 @@ Chat GPT-3.5 was gebruikt bij het helpen maken van alle versies.
 
 In deze project versie gebruikte ik deze website als mijn starting punt: https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
 
+Ik heb uiteindelijk hun iconen gebruikt en ik heb hun script onderaan de website gebruikt als basis voor mijn spel.
+
 <img width="600" height="400" src="Readme_Images/v1credit.png" alt="image">
 
 <br><br>
 
-Ik heb uiteindelijk hun iconen gebruikt en ik heb hun script onderaan de website gebruikt als basis voor mijn spel.
 
 Ik heb ook iconen van icons8 gebruikt, dus om hen te crediteren is hier hun link: icons8.com
 
@@ -197,11 +198,11 @@ Chat GPT-3.5 was used to support development in all versions.
 
 In this project version i used this website as my starting point: https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
 
+I ended up using their icon assets and, i used their script at the bottom of the website as my baseline to base my game off.
+
 <img width="600" height="400" src="Readme_Images/v1credit.png" alt="image">
 
 <br><br>
-
-I ended up using their icon assets and, i used their script at the bottom of the website as my baseline to base my game off.
 
 I also used icons from icons8 so to credit them here's there link: icons8.com
 
