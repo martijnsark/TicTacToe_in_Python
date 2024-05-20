@@ -17,9 +17,13 @@ In this project version i used this website as my starting point: https://thepyt
 
 <img width="600" height="400" src="Readme_Images/v1credit.png" alt="image">
 
+<br><br>
+
 I ended up using their icon assets and, i used their script at the bottom of the website as my baseline to base my game off.
 
 I also used icons from icons8 so to credit them here's there link: icons8.com
+
+<img width="600" height="400" src="Readme_Images/v2credit.png" alt="image">
 
 this concludes the credits of the first version:
 
