@@ -1,5 +1,9 @@
 # Dutch_TicTacToe_in_Python
 
+### Scroll down for English translation
+
+<br><br>
+
 
 ## universal credits:
 
@@ -13,7 +17,7 @@ Chat GPT-3.5 was gebruikt bij het helpen maken van alle versies.
 
 ### De eerste spelversie Credits:
 
-In deze project versie gebruikte ik deze website als mijn starting punt: https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
+In deze project versie gebruikte ik deze website als mijn start punt: https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
 
 Ik heb uiteindelijk hun iconen gebruikt en ik heb hun script onderaan de website gebruikt als basis voor mijn spel.
 
