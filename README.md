@@ -5,7 +5,7 @@
 <br><br>
 
 
-## universal credits:
+## Universeel credits:
 
 Chat GPT-3.5 was gebruikt bij het helpen maken van alle versies.
 
@@ -167,7 +167,7 @@ Download het .ipynb-bestand en open het door te klikken op de pijl uitvoeren lin
 
 
 
-##  hoe .py-bestanden te activeren/gebruiken:
+##  Hoe .py-bestanden te activeren/gebruiken:
 
 Download deze bestanden van dit project.
 - tictactoe.py
@@ -227,7 +227,7 @@ python .\"SchrijfPyGameTitle.py"
 # English_TicTacToe_in_Python
 
 
-## universal credits:
+## Universal credits:
 
 Chat GPT-3.5 was used to support development in all versions.
 
@@ -273,7 +273,7 @@ this concludes the credits of the second version:
 
 
 
-## the goal:
+## The goal:
 
 The assigment started as the description of: a zero-sum boardgame using machine learning as opponent with a Graphical User Interface.
 
@@ -288,7 +288,7 @@ The output of the end product was to show how machine learning/AI can effect how
 
 
 
-## the software i used:
+## The software i used:
 
 I'm using Visual studio code as my GUI.
   - I added the environment i made on Anaconda through CTRL + SHIFT + P and then selected "select interpreter"
@@ -388,7 +388,7 @@ Download and open the .ipynb file proceed by click on the execute arrow at the l
 
 
 
-## how to actiovate/use .py files:
+## How to actiovate/use .py files:
 
 Download these files from this project.
 - tictactoe.py
