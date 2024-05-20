@@ -73,9 +73,17 @@ Ik gebruik Visual studio code als mijn GUI.
   - Ik voegde toe Python plug-in.
   - Ik voegde toe Jupyter notebook plug-in.
 
+Download link: https://code.visualstudio.com/
+<img width="600" height="400" src="Readme_Images/visualstudiocodeimg1.png" alt="image">
+
+<br><br>
+
 Ik gebruik Anaconda als mijn pakketbeheerder.
 - Ik voegde toeJupyter Notebooks
 - Ik voegde toe Qt console
+
+Download link: https://www.anaconda.com/download/success
+<img width="600" height="400" src="Readme_Images/anacondaimg1.png" alt="image">
 
 <br><br>
 
@@ -259,9 +267,18 @@ I'm using Visual studio code as my GUI.
   - I added the Python plug-in.
   - I added the Jupyter notebook plug-in.
 
+Download link: https://code.visualstudio.com/
+<img width="600" height="400" src="Readme_Images/visualstudiocodeimg1.png" alt="image">
+
+<br><br>
+
 I'm using Anaconda as my package manager.
 - I added Jupyter Notebooks
 - I added Qt console
+
+
+Download link: https://www.anaconda.com/download/success
+<img width="600" height="400" src="Readme_Images/anacondaimg1.png" alt="image">
 
 <br><br>
 
