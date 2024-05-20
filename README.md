@@ -4,14 +4,14 @@
 
 You can either scroll down or click here: [English_TicTacToe_in_Python](#English_TicTacToe_in_Python)
 
-<br><br>
+<br><br><br><br>
 
 
 ## Universele credits:
 
 Chat GPT-3.5 was gebruikt bij het helpen maken van alle versies.
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -25,7 +25,7 @@ Ik heb uiteindelijk hun iconen gebruikt en ik heb hun script onderaan de website
 
 <img width="600" height="400" src="Readme_Images/v1credit.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 
 Ik heb ook iconen van icons8 gebruikt, dus om hen te crediteren is hier hun link: icons8.com
@@ -34,7 +34,7 @@ Ik heb ook iconen van icons8 gebruikt, dus om hen te crediteren is hier hun link
 
 Hiermee zijn de credits van de eerste versie afgelopen:
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -48,7 +48,7 @@ In deze projectversie heb ik een script van mijn klant als uitgangspunt gebruikt
 
 Hiermee zijn de credits van de tweede versie afgelopen:
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -65,7 +65,7 @@ De doelgroep waren volwassenen met weinig tot geen technische achtergrond.
 
 De output van het eindproduct was om te laten zien hoe machine learning/AI invloed kan hebben op hoe dingen spelen, zoals in dit geval de moeilijkheidsgraad van het spel.
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -82,7 +82,7 @@ Ik gebruik Visual studio code als mijn GUI.
 Download link: https://code.visualstudio.com/
 <img width="600" height="400" src="Readme_Images/visualstudiocodeimg1.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 Ik gebruik Anaconda als mijn pakketbeheerder.
 - Ik voegde toeJupyter Notebooks
@@ -91,7 +91,7 @@ Ik gebruik Anaconda als mijn pakketbeheerder.
 Download link: https://www.anaconda.com/download/success
 <img width="600" height="400" src="Readme_Images/anacondaimg1.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -108,7 +108,7 @@ Ik werkte op basis van iteraties en het duurde twee iteraties om deze versie te 
 
 <img width="600" height="400" src="Readme_Images/gameplayimg1.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 Dit zijn de gerelateerde bestanden van deze versie:
 - tictactoe.py
@@ -118,7 +118,7 @@ Dit zijn de gerelateerde bestanden van deze versie:
 
  De code voor het .ipynb bestand voert alleen de code uit die in het tictactoe.py bestand staat.
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -137,7 +137,7 @@ Ik heb gewerkt op basis van iteraties en deze versie heeft één iteratie gekost
 
 <img width="600" height="400" src="Readme_Images/gameplayimg2.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 Dit zijn de gerelateerde bestanden van deze versie:
 - in de map “andere versies van het spel”,
@@ -145,7 +145,7 @@ Dit zijn de gerelateerde bestanden van deze versie:
     - die dit Jupyter-notitieboekbestand “MiniMax_AI_implementation_game.ipynb” bevat.
 Dit is het enige bestand dat u nodig hebt
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -163,7 +163,7 @@ Download het .ipynb-bestand en open het door te klikken op de pijl uitvoeren lin
 
 <img width="600" height="400" src="Readme_Images/executearrowimg.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -182,13 +182,13 @@ Open de terminaal:
 
 <img width="600" height="400" src="Readme_Images/openterminalimg.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 Maak zeker dat onderaan op je scherm op Terminal tab staat:
 
 <img width="600" height="100" src="Readme_Images/terminaltabsimg.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 Schrijf in de terminal: cd "schrijf directory van tictactoe.py locatie" 
 
@@ -197,7 +197,7 @@ Merk op dat de afbeeldingen in een map Afbeeldingen moeten staan in de map van d
 Zoals hier: 
 <img width="600" height="400" src="Readme_Images/foldersimg.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 Nu de map correct is, moet u de volgende code invoeren telkens wanneer u uw code wilt uitvoeren:
 
@@ -234,7 +234,7 @@ python .\"SchrijfPyGameTitle.py"
 
 Chat GPT-3.5 was used to support development in all versions.
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -248,7 +248,7 @@ I ended up using their icon assets and, i used their script at the bottom of the
 
 <img width="600" height="400" src="Readme_Images/v1credit.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 I also used icons from icons8 so to credit them here's there link: icons8.com
 
@@ -256,7 +256,7 @@ I also used icons from icons8 so to credit them here's there link: icons8.com
 
 this concludes the credits of the first version:
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -269,7 +269,8 @@ In this project version i used a script made by my client as starting point.
 <img width="600" height="400" src="Readme_Images/v3credit.png" alt="image">
 
 this concludes the credits of the second version:
-<br><br>
+
+<br><br><br><br>
 
 
 
@@ -285,7 +286,8 @@ The assigenment whas shifted to be a Tic Tac Toe game in a 6 by 6 grid using Min
 The target audience was adults with little to none techinical background.
 
 The output of the end product was to show how machine learning/AI can effect how things play out as in this case it was the AI difficulty of the game
-<br><br>
+
+<br><br><br><br>
 
 
 
@@ -302,7 +304,7 @@ I'm using Visual studio code as my GUI.
 Download link: https://code.visualstudio.com/
 <img width="600" height="400" src="Readme_Images/visualstudiocodeimg1.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 I'm using Anaconda as my package manager.
 - I added Jupyter Notebooks
@@ -312,7 +314,7 @@ I'm using Anaconda as my package manager.
 Download link: https://www.anaconda.com/download/success
 <img width="600" height="400" src="Readme_Images/anacondaimg1.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -329,7 +331,7 @@ I worked based on iterations and this version took two iterations to make.
 
 <img width="600" height="400" src="Readme_Images/gameplayimg1.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 These are the related files to this version:
 - tictactoe.py
@@ -339,7 +341,7 @@ These are the related files to this version:
 
   The code for the .ipynb file only executes the code that is in the tictactoe.py file.
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -358,7 +360,7 @@ I worked based on iterations and this version took one iterations to make.
 
 <img width="600" height="400" src="Readme_Images/gameplayimg2.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 These are the related files to this version:
 - in the "other-versions-of-the-game" folder,
@@ -366,7 +368,7 @@ These are the related files to this version:
     - which holds this "MiniMax_AI_implementation_game.ipynb" Jupyter notebook file.
 ^this is the only file you need
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -384,7 +386,7 @@ Download and open the .ipynb file proceed by click on the execute arrow at the l
 
 <img width="600" height="400" src="Readme_Images/executearrowimg.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -403,13 +405,13 @@ Open the terminaal:
 
 <img width="600" height="400" src="Readme_Images/openterminalimg.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 Ensure you are in the Terminal tab at the bottem of you're screen:
 
 <img width="600" height="100" src="Readme_Images/terminaltabsimg.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 write in the terminal: cd "insert directory of tictactoe.py location" 
 
@@ -418,7 +420,7 @@ do note that the images should be in a Images folder inside the directory of the
 Like this: 
 <img width="600" height="400" src="Readme_Images/foldersimg.png" alt="image">
 
-<br><br>
+<br><br><br><br>
 
 Now that the directory is correct you wil need to enter the following code every time you want to execute you're code:
 
