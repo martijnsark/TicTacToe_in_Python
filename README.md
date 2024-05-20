@@ -184,7 +184,7 @@ Open de terminaal:
 
 Maak zeker dat onderaan op je scherm op Terminal tab staat:
 
-<img width="600" height="400" src="Readme_Images/terminaltabsimg.png" alt="image">
+<img width="600" height="200" src="Readme_Images/terminaltabsimg.png" alt="image">
 
 <br><br>
 
