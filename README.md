@@ -65,9 +65,9 @@ De output van het eindproduct was om te laten zien hoe machine learning/AI invlo
 
 
 
-## the software i used:
+## De software die ik heb gebruikt:
 
-I'm using Visual studio code as my GUI.
+Ik gebruik Visual studio code als mijn GUI.
   - Ik voegde toe een environment die ik gemaakt heb op Anaconda via CTRL + SHIFT + P en dan selecteer "select interpreter"
   - Ik voegde toe "Pygame" via de "pip install pygame" command in de terminal dit was dan toegevoegd aan mijn Anaconda environment.
   - Ik voegde toe Python plug-in.
