@@ -1,6 +1,8 @@
 # Dutch_TicTacToe_in_Python
 
-### Scroll down for English translation
+### English translation
+
+You can either scroll down or click here: [English_TicTacToe_in_Python](#English_TicTacToe_in_Python)
 
 <br><br>
 
@@ -184,7 +186,7 @@ Open de terminaal:
 
 Maak zeker dat onderaan op je scherm op Terminal tab staat:
 
-<img width="600" height="200" src="Readme_Images/terminaltabsimg.png" alt="image">
+<img width="600" height="100" src="Readme_Images/terminaltabsimg.png" alt="image">
 
 <br><br>
 
@@ -202,7 +204,7 @@ Nu de map correct is, moet u de volgende code invoeren telkens wanneer u uw code
 python .\"SchrijfPyGameTitle.py"
 
 
-<br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
 
 
 
@@ -405,7 +407,7 @@ Open the terminaal:
 
 Ensure you are in the Terminal tab at the bottem of you're screen:
 
-<img width="600" height="200" src="Readme_Images/terminaltabsimg.png" alt="image">
+<img width="600" height="100" src="Readme_Images/terminaltabsimg.png" alt="image">
 
 <br><br>
 
