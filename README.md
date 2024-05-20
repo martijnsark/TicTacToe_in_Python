@@ -5,6 +5,8 @@
 
 Chat GPT-3.5 was used to support development in all versions.
 
+<br><br>
+
 
 
 
@@ -12,6 +14,8 @@ Chat GPT-3.5 was used to support development in all versions.
 ### The first game version Credits:
 
 In this project version i used this website as my starting point: https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
+
+<img width="600" height="400" src="Readme_Images/v1credit.png" alt="image">
 
 I ended up using their icon assets and, i used their script at the bottom of the website as my baseline to base my game off.
 
@@ -111,13 +115,6 @@ These are the related files to this version:
 
 
 
-## how do i execute the code of Version-1?
-
-I created two ways depending on how you want to use this project:
-- 1 using the .ipynb file
-- 2 using the python file
-
-Both scripts in my version use a Anaconda Environment with packages and if you're code doesn't work check the section above "the software i used"
 
 
 
@@ -126,15 +123,17 @@ Both scripts in my version use a Anaconda Environment with packages and if you'r
 
 ## How to activate/use .ipynb files:
 
-Open the .ipynb file and click on the execute arrow at the left top from the segment you want to activate/use.
+Download and open the .ipynb file proceed by click on the execute arrow at the left top from the segment you want to activate/use.
+
+
+<br><br>
 
 
 
 
 
 
-
-## 1.2:
+## how to actiovate/use .py files:
 
 Download these files from this project.
 - tictactoe.py
@@ -142,8 +141,10 @@ Download these files from this project.
 
 You will need to enter the following every time you open Visual studio code to establish the folder you're working in:
 
-cd "insert directory"
+cd "insert directory of tictactoe.py location" 
 
-Now that the directory meets you wil need to enter the following code every time you want to execute you're code:
+do note that the images should be in a Images folder inside the directory of the tictactoe.py location
+
+Now that the directory is correct you wil need to enter the following code every time you want to execute you're code:
 
 python .\"InsertPyGameTitle.py"
