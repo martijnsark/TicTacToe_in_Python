@@ -30,6 +30,7 @@ Chat GPT-3.5 was gebruikt bij het helpen maken van alle versies.
 ### De eerste spelversie Credits:
 
 In deze project versie gebruikte ik deze website als mijn start punt: 
+
 https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
 
 Ik heb uiteindelijk hun iconen gebruikt en ik heb hun script onderaan de website gebruikt als basis voor mijn spel.
@@ -336,7 +337,9 @@ Chat GPT-3.5 was used to support development in all versions.
 
 ### The first game version Credits:
 
-In this project version i used this website as my starting point: https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
+In this project version i used this website as my starting point: 
+
+https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
 
 I ended up using their icon assets and, i used their script at the bottom of the website as my baseline to base my game off.
 
