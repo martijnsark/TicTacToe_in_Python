@@ -106,10 +106,10 @@ Je vindt een PowerPoint en video's die laten zien hoe de demo's eruitzagen in de
 ## De software die ik gebruikt heb:
 
 Ik gebruik Visual studio code als mijn GUI.
-  - Ik voegde toe een environment die ik gemaakt heb op Anaconda via CTRL + SHIFT + P en dan selecteer "select interpreter"
-  - Ik voegde toe "Pygame" via de "pip install pygame" command in de terminal dit was dan toegevoegd aan mijn Anaconda environment.
-  - Ik voegde toe Python plug-in.
-  - Ik voegde toe Jupyter notebook plug-in.
+  - Ik heb een omgeving toegevoegd die ik heb gemaakt in Anaconda via CTRL + SHIFT + P en vervolgens selecteerde ik "selecteer interpreter".
+  - Ik heb "Pygame" toegevoegd via het commando "pip install pygame" in de terminal. Dit werd toegevoegd aan mijn Anaconda-omgeving.
+  - Ik heb de Python-plug-in toegevoegd.
+  - Ik heb de Jupyter Notebook-plug-in toegevoegd.
 
 Download link: https://code.visualstudio.com/
 <img width="600" height="400" src="Readme_Images/visualstudiocodeimg1.png" alt="image">
