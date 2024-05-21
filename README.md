@@ -106,10 +106,11 @@ Je vindt een PowerPoint en video's die laten zien hoe de demo's eruitzagen in de
 ## De software die ik gebruikt heb:
 
 Ik gebruik Visual studio code als mijn GUI.
+- Ik heb de Python-plug-in toegevoegd.
+- Ik heb de Jupyter Notebook-plug-in toegevoegd.
   - Ik heb een environment toegevoegd die ik heb gemaakt in Anaconda via CTRL + SHIFT + P en vervolgens selecteerde ik "selecteer interpreter".
-  - Ik heb "Pygame" toegevoegd via het commando "pip install pygame" in de terminal. Dit werd toegevoegd aan mijn Anaconda-omgeving.
-  - Ik heb de Python-plug-in toegevoegd.
-  - Ik heb de Jupyter Notebook-plug-in toegevoegd.
+    - Ik heb "Pygame" toegevoegd via het commando "pip install pygame" in de terminal. Dit werd toegevoegd aan mijn Anaconda-omgeving.
+  
 
 Download link: https://code.visualstudio.com/
 <img width="600" height="400" src="Readme_Images/visualstudiocodeimg1.png" alt="image">
@@ -118,8 +119,8 @@ Download link: https://code.visualstudio.com/
 
 Ik gebruik Anaconda als mijn pakketbeheerder.
 - Ik maakten een nieuwe omgeving aan.
- - Ik heb de Jupyter Notebooks-plug-in eraan toegevoegd.
- - Ik heb de Qt-console-plug-in eraan toegevoegd.
+  - Ik heb de Jupyter Notebooks-plug-in eraan toegevoegd.
+  - Ik heb de Qt-console-plug-in eraan toegevoegd.
 
 Download link: https://www.anaconda.com/download/success
 <img width="600" height="400" src="Readme_Images/anacondaimg1.png" alt="image">
@@ -426,10 +427,11 @@ You can find a PowerPoint and videos showing what the demo's inside the PowerPoi
 ## The software i used:
 
 I'm using Visual Studio Code as my GUI.
-  - I added the environment I made in Anaconda through CTRL + SHIFT + P and then selected "select interpreter".
-  - I installed "Pygame" using the "pip install pygame" command in the terminal, which was then applied to my Anaconda environment.
-  - I added the Python plug-in.
-  - I added the Jupyter Notebook plug-in.
+ - I added the Python plug-in.
+ - I added the Jupyter Notebook plug-in.
+   - I added the environment I made in Anaconda through CTRL + SHIFT + P and then selected "select interpreter".
+     - I installed "Pygame" using the "pip install pygame" command in the terminal, which was then applied to my Anaconda environment.
+ 
 
 Download link: https://code.visualstudio.com/
 <img width="600" height="400" src="Readme_Images/visualstudiocodeimg1.png" alt="image">
@@ -438,8 +440,8 @@ Download link: https://code.visualstudio.com/
 
 I'm using Anaconda as my package manager.
 - I made a new environment.
- - I added the Jupyter Notebook plug-in to my environment.
- - I added the Qt console plug-in to my environment.
+  - I added the Jupyter Notebook plug-in to my environment.
+  - I added the Qt console plug-in to my environment.
 
 
 Download link: https://www.anaconda.com/download/success
