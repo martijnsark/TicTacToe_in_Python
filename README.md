@@ -113,6 +113,7 @@ Ik gebruik Visual studio code als mijn GUI.
   
 
 Download link: https://code.visualstudio.com/
+
 <img width="600" height="400" src="Readme_Images/visualstudiocodeimg1.png" alt="image">
 
 <br><br><br><br>
@@ -123,6 +124,7 @@ Ik gebruik Anaconda als mijn pakketbeheerder.
   - Ik heb de Qt-console-plug-in eraan toegevoegd via de home tab.
 
 Download link: https://www.anaconda.com/download/success
+
 <img width="600" height="400" src="Readme_Images/anacondaimg1.png" alt="image">
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -435,6 +437,7 @@ I'm using Visual Studio Code as my GUI.
  
 
 Download link: https://code.visualstudio.com/
+
 <img width="600" height="400" src="Readme_Images/visualstudiocodeimg1.png" alt="image">
 
 <br><br><br><br>
@@ -446,6 +449,7 @@ I'm using Anaconda as my package manager.
 
 
 Download link: https://www.anaconda.com/download/success
+
 <img width="600" height="400" src="Readme_Images/anacondaimg1.png" alt="image">
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
