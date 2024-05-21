@@ -16,7 +16,7 @@ You can either scroll down or click here: [English_TicTacToe_in_Python](#English
 
 Chat GPT-3.5 was gebruikt bij het helpen maken van alle versies.
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -44,7 +44,7 @@ Ik heb ook iconen van icons8 gebruikt, dus om hen te crediteren is hier hun link
 
 Hiermee zijn de credits van de eerste versie afgelopen:
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -63,7 +63,7 @@ In deze projectversie heb ik een script van mijn klant als uitgangspunt gebruikt
 
 Hiermee zijn de credits van de tweede versie afgelopen:
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -87,7 +87,7 @@ De output van het eindproduct was om te laten zien hoe machine learning/AI invlo
 
 Je vindt een powerpoint en video's die laten zien hoe de demo's eruitzagen in de map “Powerpoint-of-exam-presentation”.
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -119,7 +119,7 @@ Ik gebruik Anaconda als mijn pakketbeheerder.
 Download link: https://www.anaconda.com/download/success
 <img width="600" height="400" src="Readme_Images/anacondaimg1.png" alt="image">
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -149,7 +149,7 @@ Dit zijn de gerelateerde bestanden van deze versie:
 
  De code voor het .ipynb bestand voert alleen de code uit die in het tictactoe.py bestand staat.
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -184,7 +184,7 @@ Dit zijn de gerelateerde bestanden van deze versie:
     - die dit Jupyter-notitieboekbestand “MiniMax_AI_implementation_game.ipynb” bevat.
 Dit is het enige bestand dat u nodig hebt
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -208,7 +208,7 @@ Download het .ipynb-bestand en open het door te klikken op de pijl uitvoeren lin
 
 <img width="600" height="400" src="Readme_Images/executearrowimg.png" alt="image">
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -247,6 +247,7 @@ Schrijf in de terminal: cd "schrijf directory van tictactoe.py locatie"
 Merk op dat de afbeeldingen in een map Afbeeldingen moeten staan in de map van de tictactoe.py locatie.
 
 Zoals hier: 
+
 <img width="600" height="400" src="Readme_Images/foldersimg.png" alt="image">
 
 <br><br><br><br>
@@ -256,7 +257,20 @@ Nu de map correct is, moet u de volgende code invoeren telkens wanneer u uw code
 python .\"SchrijfPyGameTitle.py"
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -296,7 +310,7 @@ python .\"SchrijfPyGameTitle.py"
 
 Chat GPT-3.5 was used to support development in all versions.
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -326,7 +340,7 @@ I also used icons from icons8 so to credit them here's there link: icons8.com
 
 this concludes the credits of the first version:
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -348,7 +362,7 @@ In this project version i used a script made by my client as starting point.
 
 this concludes the credits of the second version:
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -375,7 +389,7 @@ The output of the end product was to show how machine learning/AI can effect how
 
 You can find a powerpoint and videos showing what the demo's looked like in the "Powerpoint-of-exam-presentation" folder.
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -412,7 +426,7 @@ I'm using Anaconda as my package manager.
 Download link: https://www.anaconda.com/download/success
 <img width="600" height="400" src="Readme_Images/anacondaimg1.png" alt="image">
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -449,7 +463,7 @@ These are the related files to this version:
 
   The code for the .ipynb file only executes the code that is in the tictactoe.py file.
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -487,7 +501,7 @@ These are the related files to this version:
     - which holds this "MiniMax_AI_implementation_game.ipynb" Jupyter notebook file.
 ^this is the only file you need
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -513,7 +527,7 @@ Download and open the .ipynb file proceed by click on the execute arrow at the l
 
 <img width="600" height="400" src="Readme_Images/executearrowimg.png" alt="image">
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -554,6 +568,7 @@ write in the terminal: cd "insert directory of tictactoe.py location"
 do note that the images should be in a Images folder inside the directory of the tictactoe.py location.
 
 Like this: 
+
 <img width="600" height="400" src="Readme_Images/foldersimg.png" alt="image">
 
 <br><br><br><br>
