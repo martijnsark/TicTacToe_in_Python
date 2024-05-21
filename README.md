@@ -89,7 +89,7 @@ De doelgroep waren volwassenen met weinig tot geen technische achtergrond.
 
 De output van het eindproduct was om te laten zien hoe machine learning/AI invloed kan hebben op hoe dingen spelen, zoals in dit geval de moeilijkheidsgraad van het spel.
 
-Je vindt een powerpoint en video's die laten zien hoe de demo's eruitzagen in de map “Powerpoint-of-exam-presentation”.
+Je vindt een PowerPoint en video's die laten zien hoe de demo's eruitzagen in de PowerPoint in de map “PowerPoint-of-exam-presentation”.
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -404,7 +404,7 @@ The target audience was adults with little to none techinical background.
 
 The output of the end product was to show how machine learning/AI can effect how things play out as in this case it was the AI difficulty of the game
 
-You can find a powerpoint and videos showing what the demo's looked like in the "Powerpoint-of-exam-presentation" folder.
+You can find a PowerPoint and videos showing what the demo's inside the PowerPoint looked like in the "PowerPoint-of-exam-presentation" folder.
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
