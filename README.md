@@ -33,7 +33,7 @@ In deze project versie gebruikte ik deze website als mijn start punt:
 
 https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
 
-Ik heb uiteindelijk hun iconen gebruikt en ik heb hun script onderaan de website gebruikt als basis voor mijn spel.
+Uiteindelijk heb ik hun iconen gebruikt en hun script onderaan de website als basis voor mijn spel.
 
 <img width="600" height="400" src="Readme_Images/v1credit.png" alt="image">
 
@@ -343,7 +343,7 @@ In this project version i used this website as my starting point:
 
 https://thepythoncode.com/article/make-a-tic-tac-toe-game-pygame-in-python
 
-I ended up using their icon assets and, i used their script at the bottom of the website as my baseline to base my game off.
+Ultimately, I used their icons and their script at the bottom of the website as the basis for my game.
 
 <img width="600" height="400" src="Readme_Images/v1credit.png" alt="image">
 
