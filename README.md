@@ -551,7 +551,7 @@ Download these files from this project.
 
 You will need to repeat the following every time you open Visual studio code to establish the folder you're working in:
 
-Open the terminaal:
+Open the terminal:
 
 <img width="600" height="400" src="Readme_Images/openterminalimg.png" alt="image">
 
