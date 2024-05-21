@@ -150,8 +150,8 @@ Ik werkte op basis van iteraties en het duurde twee iteraties om deze versie te 
 Dit zijn de gerelateerde bestanden van deze versie:
 - tictactoe.py
 - tictactoe.ipynb
-- Ga naar de "images" folder
-  - en download alle foto's.
+- Ga naar de "images" folder.
+  - En download alle foto's.
 
  De code voor het .ipynb bestand voert alleen de code uit die in het tictactoe.py bestand staat.
 
@@ -188,7 +188,8 @@ Dit zijn de gerelateerde bestanden van deze versie:
 - in de map “andere versies van het spel”,
   - kun je de map “2.0less-graphical-AI-focused-game” vinden,
     - die dit Jupyter-notitieboekbestand “MiniMax_AI_implementation_game.ipynb” bevat.
-Dit is het enige bestand dat u nodig hebt
+
+^Dit is het enige bestand dat u nodig hebt.
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -520,6 +521,7 @@ These are the related files to this version:
 - in the "other-versions-of-the-game" folder,
   - you can find the "2.0less-graphical-AI-focused-game" folder,
     - which holds this "MiniMax_AI_implementation_game.ipynb" Jupyter notebook file.
+
 ^this is the only file you need
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
