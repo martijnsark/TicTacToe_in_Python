@@ -40,7 +40,9 @@ Ik heb uiteindelijk hun iconen gebruikt en ik heb hun script onderaan de website
 <br><br><br><br><br><br><br><br>
 
 
-Ik heb ook iconen van icons8 gebruikt, dus om hen te crediteren is hier hun link: icons8.com
+Ik heb ook iconen van icons8 gebruikt, dus om hen te crediteren is hier hun link: 
+
+https://icons8.com/
 
 <img width="600" height="400" src="Readme_Images/v2credit.png" alt="image">
 
@@ -347,7 +349,9 @@ I ended up using their icon assets and, i used their script at the bottom of the
 
 <br><br><br><br>
 
-I also used icons from icons8 so to credit them here's there link: icons8.com
+I also used icons from icons8 so to credit them here's there link:
+
+https://icons8.com/
 
 <img width="600" height="400" src="Readme_Images/v2credit.png" alt="image">
 
