@@ -117,8 +117,9 @@ Download link: https://code.visualstudio.com/
 <br><br><br><br>
 
 Ik gebruik Anaconda als mijn pakketbeheerder.
-- Ik heb Jupyter Notebooks-plug-in toegevoegd.
-- Ik heb de Qt-console-plug-in toegevoegd.
+- Ik maakten een nieuwe omgeving aan.
+ - Ik heb de Jupyter Notebooks-plug-in eraan toegevoegd.
+ - Ik heb de Qt-console-plug-in eraan toegevoegd.
 
 Download link: https://www.anaconda.com/download/success
 <img width="600" height="400" src="Readme_Images/anacondaimg1.png" alt="image">
@@ -436,8 +437,9 @@ Download link: https://code.visualstudio.com/
 <br><br><br><br>
 
 I'm using Anaconda as my package manager.
-- I added Jupyter Notebooks
-- I added Qt console
+- I made a new environment.
+ - I added the Jupyter Notebook plug-in to my environment.
+ - I added the Qt console plug-in to my environment.
 
 
 Download link: https://www.anaconda.com/download/success
