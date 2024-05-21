@@ -191,7 +191,7 @@ Dit zijn de gerelateerde bestanden van deze versie:
   - kun je de map “2.0less-graphical-AI-focused-game” vinden,
     - die dit Jupyter-notitieboekbestand “MiniMax_AI_implementation_game.ipynb” bevat.
 
-^Dit is het enige bestand dat u nodig hebt.
+      ^Dit is het enige bestand dat u nodig hebt.
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -526,7 +526,7 @@ These are the related files to this version:
   - you can find the "2.0less-graphical-AI-focused-game" folder,
     - which holds this "MiniMax_AI_implementation_game.ipynb" Jupyter notebook file.
 
-^this is the only file you need
+      ^this is the only file you need
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
