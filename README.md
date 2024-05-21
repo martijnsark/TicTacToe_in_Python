@@ -37,7 +37,7 @@ Ik heb uiteindelijk hun iconen gebruikt en ik heb hun script onderaan de website
 
 <img width="600" height="400" src="Readme_Images/v1credit.png" alt="image">
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br>
 
 
 Ik heb ook iconen van icons8 gebruikt, dus om hen te crediteren is hier hun link: 
@@ -433,7 +433,7 @@ I'm using Visual studio code as my GUI.
 Download link: https://code.visualstudio.com/
 <img width="600" height="400" src="Readme_Images/visualstudiocodeimg1.png" alt="image">
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br>
 
 I'm using Anaconda as my package manager.
 - I added Jupyter Notebooks
