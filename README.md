@@ -106,7 +106,7 @@ Je vindt een PowerPoint en video's die laten zien hoe de demo's eruitzagen in de
 ## De software die ik gebruikt heb:
 
 Ik gebruik Visual studio code als mijn GUI.
-  - Ik heb een omgeving toegevoegd die ik heb gemaakt in Anaconda via CTRL + SHIFT + P en vervolgens selecteerde ik "selecteer interpreter".
+  - Ik heb een environment toegevoegd die ik heb gemaakt in Anaconda via CTRL + SHIFT + P en vervolgens selecteerde ik "selecteer interpreter".
   - Ik heb "Pygame" toegevoegd via het commando "pip install pygame" in de terminal. Dit werd toegevoegd aan mijn Anaconda-omgeving.
   - Ik heb de Python-plug-in toegevoegd.
   - Ik heb de Jupyter Notebook-plug-in toegevoegd.
@@ -117,8 +117,8 @@ Download link: https://code.visualstudio.com/
 <br><br><br><br>
 
 Ik gebruik Anaconda als mijn pakketbeheerder.
-- Ik voegde toeJupyter Notebooks
-- Ik voegde toe Qt console
+- Ik heb Jupyter Notebooks-plug-in toegevoegd.
+- Ik heb de Qt-console-plug-in toegevoegd.
 
 Download link: https://www.anaconda.com/download/success
 <img width="600" height="400" src="Readme_Images/anacondaimg1.png" alt="image">
@@ -424,11 +424,11 @@ You can find a PowerPoint and videos showing what the demo's inside the PowerPoi
 
 ## The software i used:
 
-I'm using Visual studio code as my GUI.
-  - I added the environment i made on Anaconda through CTRL + SHIFT + P and then selected "select interpreter"
-  - I added "Pygame" through this "pip install pygame" command in the terminal this was than applied to my Anaconda environment.
+I'm using Visual Studio Code as my GUI.
+  - I added the environment I made in Anaconda through CTRL + SHIFT + P and then selected "select interpreter".
+  - I installed "Pygame" using the "pip install pygame" command in the terminal, which was then applied to my Anaconda environment.
   - I added the Python plug-in.
-  - I added the Jupyter notebook plug-in.
+  - I added the Jupyter Notebook plug-in.
 
 Download link: https://code.visualstudio.com/
 <img width="600" height="400" src="Readme_Images/visualstudiocodeimg1.png" alt="image">
