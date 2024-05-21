@@ -59,7 +59,7 @@ Hiermee zijn de credits van de eerste versie afgelopen:
 
 
 
-### The second game version Credits:
+### De tweede spelversie Credits:
 
 In deze projectversie heb ik een script van mijn klant als uitgangspunt gebruikt.
 
