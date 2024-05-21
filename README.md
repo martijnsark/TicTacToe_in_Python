@@ -1,17 +1,27 @@
-# Dutch_TicTacToe_in_Python
+# Dutch_translation_TicTacToe_in_Python
 
-### English translation
+### Where to find English translation
 
 You can either scroll down or click here: [English_TicTacToe_in_Python](#English_TicTacToe_in_Python)
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
 
 
 ## Universele credits:
 
 Chat GPT-3.5 was gebruikt bij het helpen maken van alle versies.
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
 
 
 
@@ -25,7 +35,7 @@ Ik heb uiteindelijk hun iconen gebruikt en ik heb hun script onderaan de website
 
 <img width="600" height="400" src="Readme_Images/v1credit.png" alt="image">
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
 
 
 Ik heb ook iconen van icons8 gebruikt, dus om hen te crediteren is hier hun link: icons8.com
@@ -34,7 +44,12 @@ Ik heb ook iconen van icons8 gebruikt, dus om hen te crediteren is hier hun link
 
 Hiermee zijn de credits van de eerste versie afgelopen:
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
 
 
 
@@ -48,14 +63,19 @@ In deze projectversie heb ik een script van mijn klant als uitgangspunt gebruikt
 
 Hiermee zijn de credits van de tweede versie afgelopen:
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
 
 
 
 
 
 
-## De goal:
+
+
+
+
+
+## Het doel:
 
 De opdracht begon als de beschrijving van: een zero-sum bordspel met machine learning als tegenstander met een grafische gebruikersinterface.
 
@@ -67,7 +87,13 @@ De output van het eindproduct was om te laten zien hoe machine learning/AI invlo
 
 Je vindt een powerpoint en video's die laten zien hoe de demo's eruitzagen in de map “Powerpoint-of-exam-presentation”.
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
 
 
 
@@ -93,7 +119,10 @@ Ik gebruik Anaconda als mijn pakketbeheerder.
 Download link: https://www.anaconda.com/download/success
 <img width="600" height="400" src="Readme_Images/anacondaimg1.png" alt="image">
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
 
 
 
@@ -120,7 +149,15 @@ Dit zijn de gerelateerde bestanden van deze versie:
 
  De code voor het .ipynb bestand voert alleen de code uit die in het tictactoe.py bestand staat.
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
 
 
 
@@ -147,7 +184,13 @@ Dit zijn de gerelateerde bestanden van deze versie:
     - die dit Jupyter-notitieboekbestand “MiniMax_AI_implementation_game.ipynb” bevat.
 Dit is het enige bestand dat u nodig hebt
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
 
 
 
@@ -165,7 +208,14 @@ Download het .ipynb-bestand en open het door te klikken op de pijl uitvoeren lin
 
 <img width="600" height="400" src="Readme_Images/executearrowimg.png" alt="image">
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
 
 
 
@@ -229,14 +279,32 @@ python .\"SchrijfPyGameTitle.py"
 
 
 
-# English_TicTacToe_in_Python
+
+
+
+
+
+
+
+
+
+
+# English_translation_TicTacToe_in_Python
 
 
 ## Universal credits:
 
 Chat GPT-3.5 was used to support development in all versions.
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
 
 
 
@@ -258,7 +326,15 @@ I also used icons from icons8 so to credit them here's there link: icons8.com
 
 this concludes the credits of the first version:
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
 
 
 
@@ -272,7 +348,15 @@ In this project version i used a script made by my client as starting point.
 
 this concludes the credits of the second version:
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
 
 
 
@@ -291,7 +375,17 @@ The output of the end product was to show how machine learning/AI can effect how
 
 You can find a powerpoint and videos showing what the demo's looked like in the "Powerpoint-of-exam-presentation" folder.
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -308,7 +402,7 @@ I'm using Visual studio code as my GUI.
 Download link: https://code.visualstudio.com/
 <img width="600" height="400" src="Readme_Images/visualstudiocodeimg1.png" alt="image">
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
 
 I'm using Anaconda as my package manager.
 - I added Jupyter Notebooks
@@ -318,7 +412,17 @@ I'm using Anaconda as my package manager.
 Download link: https://www.anaconda.com/download/success
 <img width="600" height="400" src="Readme_Images/anacondaimg1.png" alt="image">
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -345,7 +449,18 @@ These are the related files to this version:
 
   The code for the .ipynb file only executes the code that is in the tictactoe.py file.
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -372,7 +487,15 @@ These are the related files to this version:
     - which holds this "MiniMax_AI_implementation_game.ipynb" Jupyter notebook file.
 ^this is the only file you need
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
 
 
 
@@ -390,7 +513,16 @@ Download and open the .ipynb file proceed by click on the execute arrow at the l
 
 <img width="600" height="400" src="Readme_Images/executearrowimg.png" alt="image">
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
 
 
 
