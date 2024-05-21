@@ -2,7 +2,7 @@
 
 ### Where to find English translation
 
-You can either scroll down or click here: [English_TicTacToe_in_Python](#English_TicTacToe_in_Python)
+You can either scroll down or click here: [English_TicTacToe_in_Python](#English_translation_TicTacToe_in_Python)
 
 <br><br><br><br><br><br><br><br>
 
@@ -304,6 +304,15 @@ python .\"SchrijfPyGameTitle.py"
 
 
 # English_translation_TicTacToe_in_Python
+
+
+### Terug_naar_het_Nederlands
+
+Je kan naar boven scrollen of hier klikken [Dutch_translation_TicTacToe_in_Python](#Dutch_translation_TicTacToe_in_Python)
+
+<br><br><br><br><br><br><br><br>
+
+
 
 
 ## Universal credits:
